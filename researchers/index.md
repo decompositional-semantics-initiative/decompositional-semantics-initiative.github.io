@@ -13,7 +13,9 @@ search_omit: true
   {% else %}
       {% assign domain = site.url %}
   {% endif %}
-  <center><a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}">{{ researcher.name }}</a></center>
+  <center>
+  <a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}"><b>{{ researcher.name }}</b></a><br/>{{ researcher.role }}<br/>{{ researcher.affiliation }}
+  </center>
 {% endfor %}
 
 ## Research Scientists
@@ -24,7 +26,9 @@ search_omit: true
   {% else %}
       {% assign domain = site.url %}
   {% endif %}
-  <center><a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}">{{ researcher.name }}</a></center>
+  <center>
+  <a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}"><b>{{ researcher.name }}</b></a><br/>{{ researcher.role }}<br/>{{ researcher.affiliation }}
+  </center>
 {% endfor %}
 
 ## Postdocs
@@ -35,7 +39,9 @@ search_omit: true
   {% else %}
       {% assign domain = site.url %}
   {% endif %}
-  <center><a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}">{{ researcher.name }}</a></center>
+  <center>
+  <a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}"><b>{{ researcher.name }}</b></a><br/>{{ researcher.role }}<br/>{{ researcher.affiliation }}
+  </center>
 {% endfor %}
 
 ## Graduate Students
@@ -46,5 +52,7 @@ search_omit: true
   {% else %}
       {% assign domain = site.url %}
   {% endif %}
-  <center><a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}">{{ researcher.name }}</a></center>
+  <center>
+  <a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}"><b>{{ researcher.name }}</b></a><br/>{{ researcher.role }}<br/>{{ researcher.affiliation }}
+  </center>
 {% endfor %}

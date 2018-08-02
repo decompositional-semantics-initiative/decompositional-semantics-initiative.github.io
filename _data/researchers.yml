@@ -3,7 +3,8 @@
 faculty:
   - handle: bvandurme
     name: Benjamin Van Durme
-    role: faculty
+    role: Assistant Professor of Computer Science
+    affiliation: Johns Hopkins University
     website: http://www.cs.jhu.edu/~vandurme/
     email: vandurme@cs.jhu.edu
     bio: "Assistant Professor of Computer Science and Cognitive Science at Johns Hopkins University"
@@ -19,7 +20,7 @@ faculty:
 
   - handle: krawlins
     name: Kyle Rawlins
-    role: Assistant Professor of Cognitive Science
+    role: Associate Professor of Cognitive Science
     affiliation: Johns Hopkins University
     website: http://sites.krieger.jhu.edu/rawlins/
     email: kgr@jhu.edu
