@@ -1,0 +1,52 @@
+# Researchers
+
+faculty:
+  - handle: bvandurme
+    name: Benjamin Van Durme
+    role: faculty
+    website: http://www.cs.jhu.edu/~vandurme/
+    email: vandurme@cs.jhu.edu
+    bio: "Assistant Professor of Computer Science and Cognitive Science at Johns Hopkins University"
+    avatar: bvandurme.jpg
+    projects:
+      - spr
+      - factuality
+      - genericity
+      - time
+      - wsd
+      - commonsense
+      - dnc
+
+  - handle: krawlins
+    name: Kyle Rawlins
+    role: Assistant Professor of Cognitive Science
+    affiliation: Johns Hopkins University
+    website: http://sites.krieger.jhu.edu/rawlins/
+    email: kgr@jhu.edu
+    bio: "Associate Professor of Cognitive Science and Director of the Semantics Lab at Johns Hopkins University"
+    avatar: krawlins.jpg
+    projects:
+      - spr
+      - factuality
+
+  - handle: aswhite
+    name: Aaron Steven White
+    role: Assistant Professor of Linguistics
+    affiliation: University of Rochester
+    website: http://aaronstevenwhite.io
+    email: aaron.white@rochester.edu
+    bio: "Assistant Professor of Linguistics, Data Science, Computer Science, and Brain & Cognitive Sciences and Director of the FACTS.lab at the University of Rochester"
+    avatar: aswhite.jpg
+    twitter: aaronsteven
+    projects:
+      - spr
+      - factuality
+      - genericity
+      - time
+      - dnc
+
+researchscientists:
+
+postdocs:
+
+students:
