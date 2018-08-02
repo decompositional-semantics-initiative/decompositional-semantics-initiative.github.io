@@ -6,14 +6,12 @@ search_omit: true
 ---
 
 <center>
-<ul>
 {% for link in site.data.projects %}
   {% if link.url contains 'http' %}
       {% assign domain = '' %}
   {% else %}
       {% assign domain = site.url %}
   {% endif %}
-  <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
 {% endfor %}
-</ul>
 </center>
