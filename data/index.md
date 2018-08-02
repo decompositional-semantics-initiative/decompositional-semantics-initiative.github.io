@@ -12,7 +12,7 @@ search_omit: true
 
 A substantial amount of both computational and linguistic research on event representations has focused on categorical, coarse thematic roles such as *AGENT* and *PATIENT*.  In spite of this, there is evidence going back to Dowty 1991 that this is the wrong grain size to look for thematic information: the appearance of roles like *AGENT* represents a conglomeration of finer-grained thematic properties such as *causation*, *volition*, *change-of-state*, etc.  
 
-In this line of work, we have developed a semantic proto-role annotation task, and shown that it readily leads to quality annotations with minimal training in crowd-sourcing situations. Decomposing thematic roles into fine-grained proto-role properties provides both theoretical and practical gains: not only does it lead to a better account of the mapping of semantic representations to syntax, it also leads to more tractable semantic annotation tasks.
+In this line of work, we develop a semantic proto-role annotation task, and shown that it readily leads to quality annotations with minimal training in crowd-sourcing situations. Decomposing thematic roles into fine-grained proto-role properties provides both theoretical and practical gains: not only does it lead to a better account of the mapping of semantic representations to syntax, it also leads to more tractable semantic annotation tasks.
 
 For a detailed description of the datasets and the item construction and collection methods as well as models of these data, please see the following papers:
 
@@ -34,6 +34,10 @@ If you make use of this dataset in a presentation or publication, we ask that yo
 
 [Download v1 (.zip)](factuality_eng_udewt_v1.tar.gz)<br/>
 [Download v2 (.zip)](factuality_eng_udewt_v2.tar.gz)
+
+A central function of natural language is to convey information about the properties of events. Perhaps the most fundamental of these properties is factuality: whether an event happened or not.
+
+In this line of work, we develop a factuality annotation that incorporates a notion of confidence. This allows us to handle a wide variety of cases where the factuality of an event is unclear.
 
 For a detailed description of the datasets and the item construction and collection methods as well as models of these data, please see the following papers:
 
