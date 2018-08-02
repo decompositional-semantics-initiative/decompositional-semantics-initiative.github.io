@@ -12,6 +12,6 @@ search_omit: true
   {% else %}
       {% assign domain = site.url %}
   {% endif %}
-  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
+  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a><br/>
 {% endfor %}
 </center>
