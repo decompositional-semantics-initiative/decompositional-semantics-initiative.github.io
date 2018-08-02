@@ -6,11 +6,14 @@ search_omit: true
 ---
 
 <center>
-[Semantics Proto-Roles](semantic-proto-roles/)<br/>
-[Factuality](factuality/)<br/>
-[Genericity](genericity/)<br/>
-[Time](time/)
-[Word Sense Disambiguation](word-sense-disambiguation/)<br/>
-[Common Sense Inference](common-sense-inference/)
-[Diverse Natural Language Inference](diverse-natural-language-inference/)
+<ul>
+{% for link in site.data.projects %}
+  {% if link.url contains 'http' %}
+      {% assign domain = '' %}
+  {% else %}
+      {% assign domain = site.url %}
+  {% endif %}
+  <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+{% endfor %}
+</ul>
 </center>
