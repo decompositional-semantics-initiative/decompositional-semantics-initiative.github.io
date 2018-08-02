@@ -5,7 +5,7 @@ locale: en_US
 description: Rapid, simple, commonsensical annotations of meaning
 logo: decomp.png
 search: false
-url: http://127.0.0.1:4000
+url: http://decompositional-semantics-initiative.github.io
 
 # Jekyll configuration
 
