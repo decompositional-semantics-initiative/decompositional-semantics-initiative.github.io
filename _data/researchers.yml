@@ -1,6 +1,7 @@
 # Researchers
 
-faculty:
+- name: Faculty
+  people:
   - handle: bvandurme
     name: Benjamin Van Durme
     role: Assistant Professor of Computer Science
@@ -46,8 +47,11 @@ faculty:
       - time
       - dnc
 
-researchscientists:
-
-postdocs:
-
-students:
+# - group: Research Scientists
+#   people:
+#
+# - group: Postdocs
+#   people:
+#
+# - group: Graduate Students
+#   people:
