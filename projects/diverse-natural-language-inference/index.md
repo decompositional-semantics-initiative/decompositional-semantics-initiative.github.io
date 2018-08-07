@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: project
 title: Diverse Natural Language Inference
 excerpt: "The Diverse Natural Language Inference project pursued by the Decompositional Semantics Initiative."
 search_omit: true
+handle: dnc
 ---
 
 For a detailed description of the datasets and the item construction and collection methods as well as models of these data, please see the following papers:

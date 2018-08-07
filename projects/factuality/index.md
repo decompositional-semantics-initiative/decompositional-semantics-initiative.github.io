@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: project
 title: Factuality
 excerpt: "The Factuality project pursued by the Decompositional Semantics Initiative."
 search_omit: true
+handle: factuality
 ---
-
-**Data:** [v1 (tar.gz)](factuality_eng_udewt_v1.tar.gz), [v2 (tar.gz)](factuality_eng_udewt_v2.tar.gz)
 
 A central function of natural language is to convey information about the properties of events. Perhaps the most fundamental of these properties is factuality: whether an event happened or not.
 

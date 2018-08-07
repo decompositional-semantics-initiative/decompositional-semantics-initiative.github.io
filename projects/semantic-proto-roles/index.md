@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: project
 title: Semantic Proto-Roles
 excerpt: "The Semantic Proto-Roles project pursued by the Decompositional Semantics Initiative."
 search_omit: true
+handle: spr
 ---
-
-**Data:** [v1 (tar.gz)](protoroles_eng_pb.tar.gz), [v2 (tar.gz)](protoroles_eng_udewt.tar.gz)
 
 A substantial amount of both computational and linguistic research on event representations has focused on categorical, coarse thematic roles such as *AGENT* and *PATIENT*.  In spite of this, there is evidence going back to Dowty 1991 that this is the wrong grain size to look for thematic information: the appearance of roles like *AGENT* represents a conglomeration of finer-grained thematic properties such as *causation*, *volition*, *change-of-state*, etc.  
 

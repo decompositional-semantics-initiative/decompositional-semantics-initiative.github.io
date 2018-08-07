@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: project
 title: Common Sense Inference
 excerpt: "The Common Sense Inference project pursued by the Decompositional Semantics Initiative."
 search_omit: true
+handle: commonsense
 ---
-
-**Data:** [v1 (tar.gz)](joci_v1.tar.gz)
 
 For a detailed description of the dataset and the item construction and collection methods as well as models of these data, please see the following papers:
 
