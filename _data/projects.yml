@@ -1,22 +1,95 @@
 # Project navigation links
 
-- title: Semantics Proto-Roles
-  url: /semantic-proto-roles/
+code:
+  - title: PredPatt
+    url: /predpatt/
 
-- title: Factuality
-  url: /factuality/
+data:
+  spr:
+    title: Semantics Proto-Roles
+    url: /semantic-proto-roles/
+    datasets:
+      - name: v1
+        corpus: Penn TreeBank
+        url: protoroles_eng_pb.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
+      - name: v2
+        corpus: English Web TreeBank
+        url: protoroles_eng_udewt.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
 
-- title: Genericity
-  url: /genericity/
+  factuality:
+    title: Factuality
+    url: /factuality/
+    datasets:
+      - name: v1
+        corpus: English Web TreeBank
+        url: factuality_eng_udewt_v1.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
+      - name: v2
+        corpus: English Web TreeBank
+        url: factuality_eng_udewt_v2.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
 
-- title: Time
-  url: /time/
+  genericity:
+    title: Genericity
+    url: /genericity/
+    datasets:
+      - name: v1
+        corpus: English Web TreeBank
+        url: genericity_eng_udewt_v1.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
 
-- title: Word Sense Disambiguation
-  url: /word-sense-disambiguation/
+  time:
+    title: Time
+    url: /time/
+    datasets:
+      - name: v1
+        corpus: English Web TreeBank
+        url: time_eng_udewt_v1.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
 
-- title: Common Sense Inference
-  url: /common-sense-inference/
+  wsd:
+    title: Word Sense Disambiguation
+    url: /word-sense-disambiguation/
+    datasets:
+      - name: v1
+        corpus: English Web TreeBank
+        url: wordnetwsd_eng_udewt_v1.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
 
-- title: Diverse Natural Language Inference
-  url: /diverse-natural-language-inference/
+  commonsense:
+    title: Common Sense Inference
+    url: /common-sense-inference/
+    datasets:
+      - name: v1
+        corpus: English Web TreeBank
+        url: joci_v1.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
+
+  dnc:
+    title: Diverse Natural Language Inference
+    url: /diverse-natural-language-inference/
+    datasets:
+      - name: v1
+        corpus: English Web TreeBank
+        url: dnc_v1.tar.gz
+        trainsize: X
+        devsize: X
+        testsize: X
