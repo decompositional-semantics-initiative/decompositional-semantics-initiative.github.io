@@ -7,26 +7,28 @@ search_omit: true
 
 <table>
   <tr>
-    <th>Project</th>
-    <th>Corpus</th>
-    <th>Train</th>
-    <th>Dev</th>
-    <th>Test</th>
-    <th>Download</th>
+    <th align="left">Project</th>
+    <th align="left">Corpus</th>
+    <th align="center">Train</th>
+    <th align="center">Dev</th>
+    <th align="center">Test</th>
+    <th align="left">Download</th>
   </tr>
 {% for project in site.data.projects.data %}
-  {% for dataset in project[1].data %} {% endfor %}
-  <tr>
-  {% if forloop.first %}
-  <td>project[1].name</td>
-  {% else %}
-  <td></td>
-  {% endif %}
-  <td>{{ dataset.corpus }}</td>
-  <td>{{ dataset.trainsize }}</td>
-  <td>{{ dataset.devsize }}</td>
-  <td>{{ dataset.testsize }}</td>
-  <td>[{{ dataset.name }}]({% link dataset.url %})</td>
-  </tr>
+  {% assign currproj = project[1] %}
+  {% for dataset in currproj.datasets %}
+    <tr>
+    {% if forloop.first %}
+    <td><a href="{{ site.url }}/projects/{{ currproj.url }}">{{ currproj.title }}</a></td>
+    {% else %}
+    <td></td>
+    {% endif %}
+    <td>{{ dataset.corpus }}</td>
+    <td>{{ dataset.trainsize }}</td>
+    <td>{{ dataset.devsize }}</td>
+    <td>{{ dataset.testsize }}</td>
+    <td><a href="{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a></td>
+    </tr>
+  {% endfor %}
 {% endfor %}
 </table>

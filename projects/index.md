@@ -5,15 +5,10 @@ excerpt: "Projects pursued by the Decompositional Semantics Initiative."
 search_omit: true
 ---
 
-{% assign allprojects = site.data.projects.code | concat: site.data.projects.data %}
-
 <center>
-{% for project in allprojects %}
-  {% if project[1].url contains 'http' %}
-      {% assign domain = '' %}
-  {% else %}
-      {% assign domain = site.url %}
-  {% endif %}
-  <a href="{{ domain }}{{ project[1].url }}" {% if project[1].url contains 'http' %}target="_blank"{% endif %}>{{ project[1].title }}</a><br/>
+{% for category in site.data.projects %}
+  {% for project in category[1] %}
+    <a href="{{ page.url | append: project[1].url }}">{{ project[1].title }}</a><br/>
+  {% endfor %}
 {% endfor %}
 </center>
