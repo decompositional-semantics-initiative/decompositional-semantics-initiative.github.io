@@ -7,8 +7,8 @@ logo: decomp.png
 search: false
 #url: http://127.0.0.1:4000
 #url: http://decomp.io
-url: https://decompositional-semantics-initiative.github.io
-#url: https://decomp-sem.github.io
+#url: https://decompositional-semantics-initiative.github.io
+url: https://decomp-sem.github.io
 
 # Jekyll configuration
 
