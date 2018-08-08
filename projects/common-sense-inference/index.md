@@ -1,9 +1,7 @@
 ---
 layout: project
-title: Common Sense Inference
-excerpt: "The Common Sense Inference project pursued by the Decompositional Semantics Initiative."
-search_omit: true
 handle: commonsense
+search_omit: true
 ---
 
 For a detailed description of the dataset and the item construction and collection methods as well as models of these data, please see the following papers:

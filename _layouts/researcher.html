@@ -23,7 +23,7 @@
       </header>
       <div class="entry-content">
         <h2>Projects</h2>
-        {% for project in researcher.projects %}<a href="{{ site.url }}/projects/{{ site.data.projects.data[project].url }}">{{ site.data.projects.data[project].title }}</a>{% if forloop.last == false %},{% endif %} {% endfor %}
+        {% for project in researcher.projects %}<a href="{{ site.url }}/projects/{{ site.data.projects[project].url }}">{{ site.data.projects[project].title }}</a>{% if forloop.last == false %},{% endif %} {% endfor %}
         <h2>Website</h2>
         <a href="{{ researcher.website }}">{{ researcher.website }}</a>
         <h2>Bio</h2>

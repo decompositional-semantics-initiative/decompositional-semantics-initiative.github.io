@@ -1,9 +1,7 @@
 ---
 layout: project
-title: Time
-excerpt: "The Time project pursued by the Decompositional Semantics Initiative."
-search_omit: true
 handle: time
+search_omit: true
 ---
 
 <!--

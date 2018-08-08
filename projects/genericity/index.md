@@ -1,9 +1,7 @@
 ---
 layout: project
-title: Genericity
-excerpt: "The Genericity project pursued by the Decompositional Semantics Initiative."
-search_omit: true
 handle: genericity
+search_omit: true
 ---
 
 <!--

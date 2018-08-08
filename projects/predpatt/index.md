@@ -1,7 +1,6 @@
 ---
 layout: page
-title: PredPatt
-excerpt: "The PredPatt project pursued by the Decompositional Semantics Initiative."
+handle: predpatt
 search_omit: true
 ---
 

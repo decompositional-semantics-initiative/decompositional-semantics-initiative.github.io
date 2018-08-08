@@ -14,7 +14,7 @@ search_omit: true
     <th align="center">Test</th>
     <th align="left">Download</th>
   </tr>
-{% for project in site.data.projects.data %}
+{% for project in site.data.projects %}
   {% assign currproj = project[1] %}
   {% for dataset in currproj.datasets %}
     <tr>
@@ -27,7 +27,7 @@ search_omit: true
     <td>{{ dataset.trainsize }}</td>
     <td>{{ dataset.devsize }}</td>
     <td>{{ dataset.testsize }}</td>
-    <td><a href="{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a></td>
+    <td><a href="{{ site.url }}/projects/{{ currproj.url }}{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a></td>
     </tr>
   {% endfor %}
 {% endfor %}
