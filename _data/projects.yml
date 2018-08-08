@@ -84,9 +84,9 @@ commonsense:
   url: common-sense-inference/
   datasets:
     - name: v1
-      filetype: tar.gz
+      filetype: zip
       corpus: English Web TreeBank
-      url: joci.tar.gz
+      url: joci.zip
       trainsize: XXXXX
       devsize: XXXXX
       testsize: XXXXX
