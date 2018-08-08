@@ -1,57 +1,55 @@
 # Researchers
 
-- name: Faculty
+faculty:
+  name: Faculty
   people:
-  - handle: bvandurme
-    name: Benjamin Van Durme
-    role: Assistant Professor of Computer Science
-    affiliation: Johns Hopkins University
-    website: http://www.cs.jhu.edu/~vandurme/
-    email: vandurme@cs.jhu.edu
-    bio: "Assistant Professor of Computer Science and Cognitive Science at Johns Hopkins University"
-    avatar: bvandurme.jpg
-    projects:
-      - spr
-      - factuality
-      - genericity
-      - time
-      - wsd
-      - commonsense
-      - dnc
+    bvandurme:
+      name: Benjamin Van Durme
+      role: Assistant Professor of Computer Science
+      affiliation: Johns Hopkins University
+      website: http://www.cs.jhu.edu/~vandurme/
+      email: vandurme@cs.jhu.edu
+      projects:
+        - spr
+        - factuality
+        - genericity
+        - time
+        - wsd
+        - commonsense
+        - dnc
 
-  - handle: krawlins
-    name: Kyle Rawlins
-    role: Associate Professor of Cognitive Science
-    affiliation: Johns Hopkins University
-    website: http://sites.krieger.jhu.edu/rawlins/
-    email: kgr@jhu.edu
-    bio: "Associate Professor of Cognitive Science and Director of the Semantics Lab at Johns Hopkins University"
-    avatar: krawlins.jpg
-    projects:
-      - spr
-      - factuality
+    krawlins:
+      name: Kyle Rawlins
+      role: Associate Professor of Cognitive Science
+      affiliation: Johns Hopkins University
+      website: http://sites.krieger.jhu.edu/rawlins/
+      email: kgr@jhu.edu
+      projects:
+        - spr
+        - factuality
 
-  - handle: aswhite
-    name: Aaron Steven White
-    role: Assistant Professor of Linguistics
-    affiliation: University of Rochester
-    website: http://aaronstevenwhite.io
-    email: aaron.white@rochester.edu
-    bio: "Assistant Professor of Linguistics, Data Science, Computer Science, and Brain & Cognitive Sciences and Director of the FACTS.lab at the University of Rochester"
-    avatar: aswhite.jpg
-    twitter: aaronsteven
-    projects:
-      - spr
-      - factuality
-      - genericity
-      - time
-      - dnc
+    aswhite:
+      name: Aaron Steven White
+      role: Assistant Professor of Linguistics
+      affiliation: University of Rochester
+      website: http://aaronstevenwhite.io
+      email: aaron.white@rochester.edu
+      twitter: aaronsteven
+      projects:
+        - spr
+        - factuality
+        - genericity
+        - time
+        - dnc
 
-# - group: Research Scientists
+# researchscientists:
+#   group: Research Scientists
 #   people:
 #
-# - group: Postdocs
+# postdocs:
+#   group: Postdocs
 #   people:
 #
-# - group: Graduate Students
+# graduatestudents:
+#   group: Graduate Students
 #   people:

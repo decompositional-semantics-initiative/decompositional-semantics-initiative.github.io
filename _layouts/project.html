@@ -27,9 +27,9 @@
           <tr>
         {% for group in site.data.researchers %}
           {% assign i = 1 %}
-          {% for researcher in group.people %}
-            {% if researcher.projects contains page.handle %}
-              <td><center><a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}"><b>{{ researcher.name }}</b></td>
+          {% for researcher in group[1].people %}
+            {% if researcher[1].projects contains page.handle %}
+              <td><center><a href="{{ researcher[1].website }}"><img src="{{ site.url }}/images/{{ researcher[1].avatar }}" class="bio-photo-about" alt="{{ researcher[1].name }} bio photo"/></a><br/><a href="{{ researcher[1].website }}"><b>{{ researcher[1].name }}</b></td>
               {% if i == cols %}
             </tr>
               {% assign i = 1 %}

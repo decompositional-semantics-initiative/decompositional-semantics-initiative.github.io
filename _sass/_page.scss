@@ -148,6 +148,16 @@ span + .entry-title {
 	}
 }
 
+.bio-photo-about-big {
+	@include media($large) {
+		width: 300px;
+		height: 300px;
+		margin-top: 10px;
+		@include rounded(300px);
+		@include clearfix;
+	}
+}
+
 /* feature image credit */
 
 .image-credit {
