@@ -21,6 +21,30 @@
       <div class="entry-content">
         <b>Data:</b> {% for dataset in site.data.projects.data[page.handle].datasets %}<a href="{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a>{% if forloop.last == false %},{% endif %} {% endfor %}
         {{ content }}
+        {% assign cols = 3 %}
+        <h2>Researchers</h2>
+        <table>
+          <tr>
+        {% for group in site.data.researchers %}
+          {% assign i = 1 %}
+          {% for researcher in group.people %}
+            {% if researcher.projects contains page.handle %}
+              <td><center><a href="{{ researcher.website }}"><img src="{{ site.url }}/images/{{ researcher.avatar }}" class="bio-photo-about" alt="{{ researcher.name }} bio photo"/></a><br/><a href="{{ researcher.website }}"><b>{{ researcher.name }}</b></td>
+              {% if i == cols %}
+            </tr>
+              {% assign i = 1 %}
+              {% endif %}
+              {% assign i = i | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        {% if i > 0 and i < cols %}
+          {% for j in (i..cols) %}
+          <td></td>
+          </tr>
+          {% endfor %}
+        {% endif %}
+        </table>
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
   </article>
