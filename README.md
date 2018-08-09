@@ -90,7 +90,7 @@ website links will be automatically populated from the project metadata in
 
 ### Adding a project
 
-There are four steps to adding a researcher to the
+There are four steps to adding a project to the
 [Projects](http://decomp.io/projects/) and [Data](http://decomp.io/data/) pages.
 
 1. Create an entry for the project in the `_data/projects.yml` file with a
