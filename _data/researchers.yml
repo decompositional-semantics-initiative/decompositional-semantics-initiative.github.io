@@ -53,6 +53,14 @@ faculty:
 #   group: Postdocs
 #   people:
 #
-# graduatestudents:
-#   group: Graduate Students
-#   people:
+graduatestudents:
+  name: Graduate Students
+  people:
+    azpoliak:
+      name: Adam Poliak
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: http://www.cs.jhu.edu/~apoliak1/
+      email: azpoliak@cs.jhu.edu
+      projects:
+	- dnc
