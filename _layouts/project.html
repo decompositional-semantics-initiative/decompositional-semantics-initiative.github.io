@@ -32,27 +32,31 @@
         <h2>About</h2>
         {{ content }}
         {% assign cols = 3 %}
+        {% assign colsminus1 = cols | minus: 1 %}
         <h2>Researchers</h2>
         <table>
-          <tr>
         {% for group in site.data.researchers %}
-          {% assign i = 1 %}
+          {% assign i = 0 %}
           {% for researcher in group[1].people %}
             {% if researcher[1].projects contains page.handle %}
+            {% if i == 0 %}
+            <tr>
+            {% endif %}
               <td><center><a href="{{ site.url }}/researchers/{{ researcher[0] }}/"><img src="{{ site.url }}/images/{{ researcher[0] }}.jpg" class="bio-photo-about" alt="{{ researcher[1].name }} bio photo"/></a><br/><a href="{{ site.url }}/researchers/{{ researcher[0] }}/"><b>{{ researcher[1].name }}</b></td>
-              {% if i == cols %}
-            </tr>
-              {% assign i = 1 %}
-              {% endif %}
-              {% assign i = i | plus: 1 %}
+                {% if i == colsminus1 %}
+                </tr>
+                {% assign i = 0 %}
+                {% else %}
+                {% assign i = i | plus: 1 %}
+                {% endif %}
             {% endif %}
           {% endfor %}
         {% endfor %}
         {% if i > 0 and i < cols %}
-          {% for j in (i..cols) %}
+          {% for j in (i..colsminus1) %}
           <td></td>
-          </tr>
           {% endfor %}
+          </tr>
         {% endif %}
         </table>
       </div><!-- /.entry-content -->
