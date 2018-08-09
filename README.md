@@ -51,7 +51,7 @@ populate the Researchers section of project pages. For instance, because `spr`
 is found in Ben's projects list and because the `spr` key in
 `_data/projects.yml` is associated with the _Semantic Proto-Roles_ project, his
 avatar is part of the researchers section of the [_Semantic Proto-Roles_ project
-page](http://decomp.io/projects/http://decomp.io/projects/semantic-proto-roles/).
+page](http://decomp.io/projects/semantic-proto-roles/).
 
 2. Place a square `.jpg` image of the researcher into the `images/` directory
 with a filename that matches that researcher's handle. For instance,
@@ -132,9 +132,10 @@ spr:
 
 Note that all entries for an annotation project are string-valued, except
 `datasets`, which maps to a list of hashes. The hashes contained within
-`projects` are contain metadata that are used to populate the table in the
-[Data](http://decomp.io/data/) page. Each hash must have seven entries: `name`,
-`filetype`, `corpus`, `url`, `trainsize`, `devsize`, and `testsize`.
+`projects` contain metadata that are used to populate the table in the
+[Data](http://decomp.io/data/) page. (A project is only added to the data page
+if it has a nonempty `datasets` list.) Each hash must have seven entries:
+`name`, `filetype`, `corpus`, `url`, `trainsize`, `devsize`, and `testsize`.
 
 2. Create a directory for the project with a name that matches the value of
 `url` you entered into `_data/projects.yml`. For instance, the directory
