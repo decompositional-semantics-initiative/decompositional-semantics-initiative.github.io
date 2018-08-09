@@ -4,6 +4,7 @@
 predpatt:
   title: PredPatt
   url: predpatt/
+  repository: https://github.com/hltcoe/PredPatt
 
 spr:
   title: Semantics Proto-Roles

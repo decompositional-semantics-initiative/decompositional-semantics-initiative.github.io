@@ -21,7 +21,12 @@
         <h1 class="entry-title">{{ project.title }}</h1>
       </header>
       <div class="entry-content">
+        {% if project.datasets %}
         <b>Data:</b> {% for dataset in project.datasets %}<a href="{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a>{% if forloop.last == false %},{% endif %} {% endfor %}
+        {% endif %}
+        {% if project.repository %}
+        <a href="{{ project.repository }}">Code</a>
+        {% endif %}
         {{ content }}
         {% assign cols = 3 %}
         <h2>Researchers</h2>

@@ -1,9 +1,7 @@
 ---
 layout: project
-title: Word Sense Disambiguation
-excerpt: "The Word Sense Disambiguation project pursued by the Decompositional Semantics Initiative."
-search_omit: true
 handle: wsd
+search_omit: true
 ---
 
 For a detailed description of the dataset and the item construction and collection methods as well as models of these data, please see the following papers:
