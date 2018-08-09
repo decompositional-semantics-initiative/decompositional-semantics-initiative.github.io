@@ -10,6 +10,7 @@ faculty:
       website: http://www.cs.jhu.edu/~vandurme/
       email: vandurme@cs.jhu.edu
       projects:
+        - predpatt
         - spr
         - factuality
         - genericity
@@ -36,10 +37,12 @@ faculty:
       email: aaron.white@rochester.edu
       twitter: aaronsteven
       projects:
+        - predpatt
         - spr
         - factuality
         - genericity
         - time
+        - wsd
         - dnc
 
 # researchscientists:
