@@ -35,8 +35,8 @@
         {% assign colsminus1 = cols | minus: 1 %}
         <h2>Researchers</h2>
         <table>
+        {% assign i = 0 %}
         {% for group in site.data.researchers %}
-          {% assign i = 0 %}
           {% for researcher in group[1].people %}
             {% if researcher[1].projects contains page.handle %}
             {% if i == 0 %}
