@@ -84,13 +84,27 @@ commonsense:
   title: Ordinal Common Sense Inference (JOCI)
   url: common-sense-inference/
   datasets:
-    - name: v1
+    - name: Full JOCI
       filetype: zip
-      corpus: English Web TreeBank
+      corpus: SNLI, ROCStories, COPA, and Gigaword
       url: joci.zip
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: N/A
+      devsize: N/A
+      testsize: N/A
+    - name: Subset A
+      filetype: zip
+      corpus: SNLI
+      url: joci-A.zip
+      trainsize: 2379
+      devsize: 299
+      testsize: 298
+    - name: Subset B
+      filetype: zip
+      corpus: SNLI and Gigaword
+      url: joci-B.zip
+      trainsize: 5091
+      devsize: 643
+      testsize: 641
 
 dnc:
   title: Diverse Natural Language Inference
