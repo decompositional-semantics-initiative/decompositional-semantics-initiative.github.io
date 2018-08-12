@@ -51,7 +51,7 @@ genericity:
     - name: v1
       filetype: available soon #tar.gz
       corpus: English Web TreeBank
-      url: genericity/ #genericity_eng_udewt_v1.tar.gz
+      url: "" #genericity_eng_udewt_v1.tar.gz
       trainsize: XXXXX
       devsize: XXXXX
       testsize: XXXXX
@@ -63,7 +63,7 @@ time:
     - name: v1
       filetype: available soon #tar.gz
       corpus: English Web TreeBank
-      url: time/ #time_eng_udewt_v1.tar.gz
+      url: "" #time_eng_udewt_v1.tar.gz
       trainsize: XXXXX
       devsize: XXXXX
       testsize: XXXXX
@@ -81,16 +81,16 @@ wsd:
       testsize: XXXXX
 
 commonsense:
-  title: Ordinal Common Sense Inference (JOCI)
+  title: Common Sense Inference
   url: common-sense-inference/
   datasets:
     - name: Full JOCI
       filetype: zip
-      corpus: SNLI, ROCStories, COPA, and Gigaword
-      url: joci.zip
-      trainsize: N/A
-      devsize: N/A
-      testsize: N/A
+      corpus: SNLI, ROCStories, COPA, Gigaword
+      url: "-"
+      trainsize: "-"
+      devsize: "-"
+      testsize: "-"
     - name: Subset A
       filetype: zip
       corpus: SNLI
