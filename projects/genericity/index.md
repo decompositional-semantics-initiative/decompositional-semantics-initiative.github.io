@@ -4,10 +4,6 @@ handle: genericity
 search_omit: true
 ---
 
-<!--
+An important line of study in formal semantics, philosophy and AI is how does the mind use language to represent real world knowledge of kinds, regularities and patterns. The study of generic noun phrases and sentences  help in filling this gap. However the current division of noun phrases, predicates and sentences is strict, and doesn't represent the  real world use very well.
 
-For a detailed description of the datasets and the item construction and collection methods as well as models of these data, please see the following papers:
-
-> Reisinger, D., R. Rudinger, F. Ferraro, C. Harman, K. Rawlins, & B. Van Durme. 2015. [Semantic Proto-Roles](https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/view/674/149).  Transactions of the Association for Computational Linguistics 3, pp. 475–488.
-
-If you make use of this dataset in a presentation or publication, we ask that you please cite at least the first two papers. -->
+In this line of work, we develop an annotation scheme that incorporates confidence ratings. This helps us account for the fact that the distinction between rigid classes like generics, habituals and episodics is not as definitive as believed to be.

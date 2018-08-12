@@ -64,3 +64,11 @@ graduatestudents:
       email: azpoliak@cs.jhu.edu
       projects:
         - dnc
+    venkat:
+      name: Venkata Subrahmanyan G
+      role: Master's Student
+      affiliation: University of Rochester
+      website: https://venkatasg.me
+      email: vgovinda@ur.rochester.edu
+      projects:
+        -genericity
