@@ -81,7 +81,7 @@ wsd:
       testsize: XXXXX
 
 commonsense:
-  title: Common Sense Inference
+  title: Ordinal Common Sense Inference (JOCI)
   url: common-sense-inference/
   datasets:
     - name: v1
