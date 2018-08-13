@@ -9,9 +9,9 @@ search_omit: true
   <tr>
     <th align="left">Project</th>
     <th align="left">Corpus</th>
-    <th align="center">Train</th>
-    <th align="center">Dev</th>
-    <th align="center">Test</th>
+    <th align="right">Train</th>
+    <th align="right">Dev</th>
+    <th align="right">Test</th>
     <th align="left">Download</th>
   </tr>
 {% for project in site.data.projects %}
@@ -19,15 +19,15 @@ search_omit: true
   {% for dataset in currproj.datasets %}
     <tr>
     {% if forloop.first %}
-    <td><a href="{{ site.url }}/projects/{{ currproj.url }}">{{ currproj.title }}</a></td>
+    <td align="left"><a href="{{ site.url }}/projects/{{ currproj.url }}">{{ currproj.title }}</a></td>
     {% else %}
     <td></td>
     {% endif %}
-    <td>{{ dataset.corpus }}</td>
-    <td>{{ dataset.trainsize }}</td>
-    <td>{{ dataset.devsize }}</td>
-    <td>{{ dataset.testsize }}</td>
-    <td><a href="{{ site.url }}/projects/{{ currproj.url }}{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a></td>
+    <td align="left">{{ dataset.corpus }}</td>
+    <td align="right">{{ dataset.trainsize }}</td>
+    <td align="right">{{ dataset.devsize }}</td>
+    <td align="right">{{ dataset.testsize }}</td>
+    <td align="left"><a href="{{ site.url }}/projects/{{ currproj.url }}{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a></td>
     </tr>
   {% endfor %}
 {% endfor %}
