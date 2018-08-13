@@ -48,14 +48,14 @@ genericity:
   title: Genericity
   url: genericity/
   datasets:
-    - name: predicate
+    - name: pred
       filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #genericity_eng_udewt_v1.tar.gz
       trainsize: XXXXX
       devsize: XXXXX
       testsize: XXXXX
-    - name: argument
+    - name: arg
       filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #genericity_eng_udewt_v1.tar.gz
