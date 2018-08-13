@@ -81,3 +81,16 @@ graduatestudents:
       projects:
         - predpatt
         - commonsense
+    rrudinger:
+      name: Rachel Rudinger
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: https://rudinger.github.io
+      email: rudinger@jhu.edu
+      projects:
+        - spr
+        - factuality
+        - commonsense
+        - predpatt
+        - commonsense
+        - dnc
