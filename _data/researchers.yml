@@ -56,6 +56,27 @@ faculty:
 graduatestudents:
   name: Graduate Students
   people:
+    rrudinger:
+      name: Rachel Rudinger
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: https://rudinger.github.io
+      email: rudinger@jhu.edu
+      projects:
+        - spr
+        - factuality
+        - commonsense
+        - predpatt
+        - dnc
+    szhang:
+      name: Sheng Zhang
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: http://www.cs.jhu.edu/~s.zhang/
+      email: zsheng2@jhu.edu
+      projects:
+        - predpatt
+        - commonsense
     azpoliak:
       name: Adam Poliak
       role: Research Assistant
@@ -72,27 +93,6 @@ graduatestudents:
       email: vgovinda@ur.rochester.edu
       projects:
         - genericity
-    szhang:
-      name: Sheng Zhang
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~s.zhang/
-      email: zsheng2@jhu.edu
-      projects:
-        - predpatt
-        - commonsense
-    rrudinger:
-      name: Rachel Rudinger
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: https://rudinger.github.io
-      email: rudinger@jhu.edu
-      projects:
-        - spr
-        - factuality
-        - commonsense
-        - predpatt
-        - dnc
     sidvash:
       name: Siddharth Vashishtha
       role: Research Assistant
