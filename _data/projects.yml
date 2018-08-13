@@ -52,22 +52,29 @@ genericity:
       filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #genericity_eng_udewt_v1.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 26569
+      devsize: 3247
+      testsize: 3102
     - name: arg
       filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #genericity_eng_udewt_v1.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 30035
+      devsize: 3611
+      testsize: 3500
 
 time:
   title: Time
   url: time/
   datasets:
-    - name: v1
+    - name: duration
+      filetype: coming soon #tar.gz
+      corpus: English Web TreeBank
+      url: "" #time_eng_udewt_v1.tar.gz
+      trainsize: XXXXX
+      devsize: XXXXX
+      testsize: XXXXX
+    - name: temporal relation
       filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #time_eng_udewt_v1.tar.gz
