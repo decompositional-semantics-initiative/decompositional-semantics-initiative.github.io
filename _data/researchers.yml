@@ -93,3 +93,11 @@ graduatestudents:
         - commonsense
         - predpatt
         - dnc
+    sidvash:
+      name: Siddharth Vashishtha
+      role: Research Assistant
+      affiliation: University of Rochester
+      website: https://sidsvash26.github.io/
+      email: svashis3@ur.rochester.edu
+      projects:
+        - time
