@@ -14,16 +14,16 @@ spr:
       filetype: tar.gz
       corpus: Penn TreeBank
       url: protoroles_eng_pb.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 7800
+      devsize: 969
+      testsize: 969
     - name: v2
       filetype: tar.gz
       corpus: English Web TreeBank
       url: protoroles_eng_udewt.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 4877
+      devsize: 632
+      testsize: 582
 
 factuality:
   title: Factuality
@@ -33,23 +33,30 @@ factuality:
       filetype: tar.gz
       corpus: English Web TreeBank
       url: factuality_eng_udewt.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 5668
+      devsize: 652
+      testsize: 600
     - name: v2
       filetype: tar.gz
       corpus: English Web TreeBank
       url: factuality_eng_udewt.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 22279
+      devsize: 2660
+      testsize: 2561
 
 genericity:
   title: Genericity
   url: genericity/
   datasets:
-    - name: v1
-      filetype: available soon #tar.gz
+    - name: predicate
+      filetype: coming soon #tar.gz
+      corpus: English Web TreeBank
+      url: "" #genericity_eng_udewt_v1.tar.gz
+      trainsize: XXXXX
+      devsize: XXXXX
+      testsize: XXXXX
+    - name: argument
+      filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #genericity_eng_udewt_v1.tar.gz
       trainsize: XXXXX
@@ -61,7 +68,7 @@ time:
   url: time/
   datasets:
     - name: v1
-      filetype: available soon #tar.gz
+      filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #time_eng_udewt_v1.tar.gz
       trainsize: XXXXX
@@ -76,9 +83,9 @@ wsd:
       filetype: tar.gz
       corpus: English Web TreeBank
       url: wordsense_eng_udewt.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 17202
+      devsize: 1943
+      testsize: 1876
 
 commonsense:
   title: Common Sense Inference
@@ -86,7 +93,7 @@ commonsense:
   datasets:
     - name: Full JOCI
       filetype: zip
-      corpus: SNLI, ROCStories, COPA, Gigaword
+      corpus: SNLI + ROCStories + COPA + Gigaword
       url: "-"
       trainsize: "-"
       devsize: "-"
@@ -100,7 +107,7 @@ commonsense:
       testsize: 298
     - name: Subset B
       filetype: zip
-      corpus: SNLI and Gigaword
+      corpus: SNLI + Gigaword
       url: joci-B.zip
       trainsize: 5091
       devsize: 643
