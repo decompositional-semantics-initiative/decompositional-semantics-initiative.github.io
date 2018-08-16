@@ -71,16 +71,16 @@ time:
       filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #time_eng_udewt_v1.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 119186
+      devsize: 33828
+      testsize: 30822
     - name: temporal relation
       filetype: coming soon #tar.gz
       corpus: English Web TreeBank
       url: "" #time_eng_udewt_v1.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: 59593
+      devsize: 16914
+      testsize: 15411
 
 wsd:
   title: Word Sense
