@@ -46,10 +46,18 @@ faculty:
         - wsd
         - dnc
 
-# researchscientists:
-#   group: Research Scientists
-#   people:
-#
+researchscientists:
+  group: Research Scientists
+  people:
+    ksakaguchi:
+      name: Keisuke Sakaguchi
+      role: Research Scientist
+      affiliation: Allen Institute for Artificial Intelligence
+      website: http://cs.jhu.edu/~keisuke/
+      email: keisukes@allenai.org
+      projects:
+        - wsd
+
 # postdocs:
 #   group: Postdocs
 #   people:
