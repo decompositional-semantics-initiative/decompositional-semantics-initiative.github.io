@@ -47,7 +47,7 @@ faculty:
         - dnc
 
 researchscientists:
-  group: Research Scientists
+  name: Research Scientists
   people:
     ksakaguchi:
       name: Keisuke Sakaguchi
