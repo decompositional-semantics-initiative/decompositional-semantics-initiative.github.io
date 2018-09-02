@@ -18,6 +18,7 @@ faculty:
         - wsd
         - commonsense
         - dnc
+        - x-dsp
 
     krawlins:
       name: Kyle Rawlins
@@ -45,10 +46,18 @@ faculty:
         - wsd
         - dnc
 
-# researchscientists:
-#   group: Research Scientists
-#   people:
-#
+researchscientists:
+  name: Research Scientists
+  people:
+    ksakaguchi:
+      name: Keisuke Sakaguchi
+      role: Research Scientist
+      affiliation: Allen Institute for Artificial Intelligence
+      website: http://cs.jhu.edu/~keisuke/
+      email: keisukes@allenai.org
+      projects:
+        - wsd
+
 # postdocs:
 #   group: Postdocs
 #   people:
@@ -68,6 +77,8 @@ graduatestudents:
         - commonsense
         - predpatt
         - dnc
+        - x-dsp
+
     szhang:
       name: Sheng Zhang
       role: Research Assistant
@@ -77,6 +88,8 @@ graduatestudents:
       projects:
         - predpatt
         - commonsense
+        - x-dsp
+
     azpoliak:
       name: Adam Poliak
       role: Research Assistant
@@ -85,6 +98,7 @@ graduatestudents:
       email: azpoliak@cs.jhu.edu
       projects:
         - dnc
+
     venkat:
       name: Venkata Subrahmanyan G
       role: Research Assistant
@@ -93,6 +107,7 @@ graduatestudents:
       email: vgovinda@ur.rochester.edu
       projects:
         - genericity
+
     sidvash:
       name: Siddharth Vashishtha
       role: Research Assistant

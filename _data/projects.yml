@@ -131,3 +131,8 @@ dnc:
       trainsize: XXXXX
       devsize: XXXXX
       testsize: XXXXX
+
+x-dsp:
+  title: Cross-lingual Decompositional Semantic Parsing
+  url: X-DSP/
+  repository: https://github.com/decompositional-semantics-initiative/X-DSP
