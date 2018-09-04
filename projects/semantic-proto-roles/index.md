@@ -16,10 +16,10 @@ For a detailed description of the datasets and the item construction and collect
 
 > White, A.S., D. Reisinger, R. Rudinger, K. Rawlins, & B. Van Durme. 2016. [Computational Linking Theory](https://arxiv.org/abs/1610.02544). arXiv:1610.02544.
 
-> White, A. S., K. Rawlins, & B. Van Durme. 2017. The Semantic Proto-Role Linking Model. Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics, pp. 92–98, Valencia, Spain, April 3-7, 2017.
+> White, A. S., K. Rawlins, & B. Van Durme. 2017. [The Semantic Proto-Role Linking Model](http://www.aclweb.org/anthology/E17-2015). Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics, pp. 92–98, Valencia, Spain, April 3-7, 2017.
 
 > Teichert, A., A. Poliak, B. Van Durme, & M. Gormley. 2017. [Semantic Proto-Role Labeling](https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14997/14053). Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17).
 
-> Rudinger, R., A. Teichert, R. Culkin, S. Zhang, & B. Van Durme. 2018. [Neural Davidsonian Semantic Proto-role Labeling](https://arxiv.org/pdf/1804.07976). arXiv:1804.07976.
+> Rudinger, R., A. Teichert, R. Culkin, S. Zhang, & B. Van Durme. 2018. [Neural Davidsonian Semantic Proto-role Labeling](https://arxiv.org/pdf/1804.07976). To appear in Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, Brussels, Belgium, October 31-November 4, 2018.
 
 If you make use of this dataset in a presentation or publication, we ask that you please cite at least the first two papers.
