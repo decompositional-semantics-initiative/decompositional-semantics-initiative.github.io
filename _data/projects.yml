@@ -128,8 +128,8 @@ dnc:
       filetype: tar.gz
       corpus: See paper
       url: dnc.tar.gz
-      trainsize: -
-      devsize: -
+      trainsize: "-"
+      devsize: "-"
       testsize: 570,459
 
 x-dsp:
