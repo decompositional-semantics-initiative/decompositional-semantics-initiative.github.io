@@ -100,7 +100,7 @@ commonsense:
   datasets:
     - name: Full JOCI
       filetype: zip
-      corpus: SNLI + ROCStories + COPA + Gigaword
+      corpus: See paper
       url: "-"
       trainsize: "-"
       devsize: "-"
@@ -126,11 +126,11 @@ dnc:
   datasets:
     - name: v1
       filetype: tar.gz
-      corpus: English Web TreeBank
+      corpus: See paper
       url: dnc.tar.gz
-      trainsize: XXXXX
-      devsize: XXXXX
-      testsize: XXXXX
+      trainsize: "-"
+      devsize: "-"
+      testsize: 570,459
 
 x-dsp:
   title: Cross-lingual Decompositional Semantic Parsing
