@@ -13,4 +13,4 @@ For a detailed description of the datasets and the item construction and collect
 
 > Poliak, A., A. Haldar, R. Rudinger, J.E. Hu, E. Pavlick, A.S. White, & B. Van Durme. 2018. [Collecting Diverse Natural Language Inference Problems for Sentence Representation Evaluation](https://arxiv.org/pdf/1804.08207.pdf). To appear in _Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing_, Brussels, Belgium, October 31-November 4, 2018.
 
-If you make use of these datasets in a presentation or publication, we ask that you please cite both of these papers. Additionally, if you use any recast NLI dataset, we ask that you please cite the original dataset that we previously recast.
+If you make use of these datasets in a presentation or publication, we ask that you please cite both of these papers. Additionally, if you use any recast NLI dataset, we ask that you please cite the original dataset that we previously recast (we provide a bibtex entry for each dataset [online](https://github.com/decompositional-semantics-initiative/DNC/blob/master/additional_references.md)).

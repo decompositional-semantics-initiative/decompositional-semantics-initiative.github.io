@@ -124,10 +124,17 @@ dnc:
   title: Diverse Natural Language Inference
   url: diverse-natural-language-inference/
   datasets:
-    - name: v1
-      filetype: tar.gz
+    - name: Inference Is Everything
+      filetype: zip
       corpus: See paper
-      url: dnc.tar.gz
+      url: https://github.com/decompositional-semantics-initiative/DNC/raw/master/inference_is_everything.zip
+      trainsize: 249,947
+      devsize: 31,696
+      testsize: 31,232
+    - name: DNC v0.1
+      filetype: url
+      corpus: See paper
+      url: https://github.com/decompositional-semantics-initiative/DNC/
       trainsize: "-"
       devsize: "-"
       testsize: 570,459
