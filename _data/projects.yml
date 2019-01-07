@@ -139,6 +139,11 @@ dnc:
       devsize: "-"
       testsize: 570,459
 
+x-dsp:
+  title: Cross-lingual Decompositional Semantic Parsing
+  url: X-DSP/
+  repository: https://github.com/decompositional-semantics-initiative/X-DSP
+
 parabank:
   title: ParaBank
   url: parabank/
@@ -146,12 +151,7 @@ parabank:
     - name: ParaBank v1.0
       filetype: url
       corpus: See paper
-      url: https://something
+      url: TBA
       trainsize: "-"
       devsize: "-"
       testsize: "-"
-
-x-dsp:
-  title: Cross-lingual Decompositional Semantic Parsing
-  url: X-DSP/
-  repository: https://github.com/decompositional-semantics-initiative/X-DSP
