@@ -19,6 +19,7 @@ faculty:
         - commonsense
         - dnc
         - x-dsp
+        - parabank
 
     krawlins:
       name: Kyle Rawlins
@@ -58,6 +59,15 @@ researchscientists:
       projects:
         - wsd
 
+    mpost:
+      name: Matt Post
+      role: Research Scientist
+      affiliation: HLTCOE
+      website: https://mjpost.github.io/
+      email: post@cs.jhu.edu
+      projects:
+        - parabank
+
 # postdocs:
 #   group: Postdocs
 #   people:
@@ -78,6 +88,7 @@ graduatestudents:
         - predpatt
         - dnc
         - x-dsp
+        - parabank
 
     szhang:
       name: Sheng Zhang
@@ -129,4 +140,3 @@ undergraduatestudents:
       projects:
         - dnc
         - parabank
-
