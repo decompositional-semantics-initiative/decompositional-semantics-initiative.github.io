@@ -139,6 +139,18 @@ dnc:
       devsize: "-"
       testsize: 570,459
 
+parabank:
+  title: ParaBank
+  url: parabank/
+  datasets:
+    - name: ParaBank v1.0
+      filetype: url
+      corpus: See paper
+      url: https://something
+      trainsize: "-"
+      devsize: "-"
+      testsize: "-"
+
 x-dsp:
   title: Cross-lingual Decompositional Semantic Parsing
   url: X-DSP/
