@@ -116,3 +116,17 @@ graduatestudents:
       email: svashis3@ur.rochester.edu
       projects:
         - time
+
+undergraduatestudents:
+  name: Undergraduate Students
+  people:
+    ehu:
+      name: Edward Hu
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: https://edwdh.github.io
+      email: edward.hu@jhu.edu
+      projects:
+        - dnc
+        - parabank
+
