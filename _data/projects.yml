@@ -148,7 +148,7 @@ parabank:
   title: ParaBank
   url: parabank/
   datasets:
-    - name: ParaBank v1.0
+    - name: ParaBank v1.0 Full (8 GB .zip)
       filetype: url
       corpus: See paper
       url: TBA
