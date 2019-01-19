@@ -1,6 +1,6 @@
 ---
 layout: researcher
-group: faculty
+group: researchscientists
 handle: mpost
 search_omit: true
 ---
