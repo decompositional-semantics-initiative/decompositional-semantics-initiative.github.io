@@ -8,5 +8,7 @@ We present ParaBank, a large-scale English paraphrase dataset that surpasses pri
 
 For a detailed description of the collection and our methods, please see the following papers:
 
-> Hu, J. E., R. Rudinger, M. Post, & B. Van Durme. 2019. [ParaBank: Monolingual Bitext Generation and Sentential Paraphrasing via Lexically-constrained Neural Machine Translation](TBA). Proceedings of AAAI 2019, Honolulu, Hawaii, January 26 – Feb 1, 2019.
+> Hu, J. E., R. Rudinger, M. Post, & B. Van Durme. 2019. [ParaBank: Monolingual Bitext Generation and Sentential Paraphrasing via Lexically-constrained Neural Machine Translation](http://aaai.org/Papers/AAAI/2019/AAAI-HuJ.4052.pdf). Proceedings of AAAI 2019, Honolulu, Hawaii, January 26 – Feb 1, 2019.
+
+To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://parabank-demo.appspot.com).
 
