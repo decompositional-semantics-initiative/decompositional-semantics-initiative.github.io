@@ -154,7 +154,7 @@ parabank:
       url: http://cs.jhu.edu/~vandurme/data/parabank-1.0-full.zip
       trainsize: "-"
       devsize: "-"
-      testsize: "-"
+      testsize: "-"    
     - name: ParaBank v1.0 Large, 50m pairs (~3 GB)
       filetype: zip
       corpus: See paper
@@ -162,10 +162,17 @@ parabank:
       trainsize: "-"
       devsize: "-"
       testsize: "-"
-    - name: ParaBank v1.0 Small, 5m pairs (Coming Soon)
+    - name: ParaBank v1.0 Small Diverse, 5m pairs
       filetype: zip
       corpus: See paper
-      url: TBD
+      url: parabank-1.0-5m-diverse.zip
+      trainsize: "-"
+      devsize: "-"
+      testsize: "-"
+    - name: ParaBank v1.0 Large Diverse, 50m pairs
+      filetype: zip
+      corpus: See paper
+      url: parabank-1.0-50m-diverse.zip
       trainsize: "-"
       devsize: "-"
       testsize: "-"
