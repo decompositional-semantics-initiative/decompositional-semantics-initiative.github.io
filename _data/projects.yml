@@ -49,16 +49,16 @@ genericity:
   url: genericity/
   datasets:
     - name: pred
-      filetype: coming soon #tar.gz
+      filetype: zip
       corpus: English Web TreeBank
-      url: "" #genericity_eng_udewt_v1.tar.gz
-      trainsize: 26569
-      devsize: 3247
-      testsize: 3102
+      url: genericity_eng_udewt_v1.zip
+      trainsize: 26721
+      devsize: 3274
+      testsize: 3119
     - name: arg
-      filetype: coming soon #tar.gz
+      filetype: zip
       corpus: English Web TreeBank
-      url: "" #genericity_eng_udewt_v1.tar.gz
+      url: genericity_eng_udewt_v1.zip
       trainsize: 30035
       devsize: 3611
       testsize: 3500
@@ -154,7 +154,7 @@ parabank:
       url: http://cs.jhu.edu/~vandurme/data/parabank-1.0-full.zip
       trainsize: "-"
       devsize: "-"
-      testsize: "-"    
+      testsize: "-"
     - name: ParaBank v1.0 Large, 50m pairs (~3 GB)
       filetype: zip
       corpus: See paper
