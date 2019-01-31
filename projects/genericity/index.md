@@ -12,4 +12,4 @@ For a detailed description of the protocols, datasets as well as models of these
 
 > V. S. Govindarajan, B. Van Durme, & White, A. S. 2019. [Decomposing Generalization: Models of Generic, Habitual, and Episodic Statements]().
 
-The code for generating the dataset files for Amazon Mechanical Turk (along with the stylesheets) can be found [here](https://github.com/FACTSlab/factslab-protocols). The code for the experiments described in the paper can be found [here](https://github.com/FACTSlab/factslab-protocols)
+The code for generating the dataset files for Amazon Mechanical Turk (along with the stylesheets) can be found [here](https://github.com/FACTSlab/factslab-protocols). The code for the experiments described in the paper can be found [here](https://github.com/FACTSlab/factslab-python)
