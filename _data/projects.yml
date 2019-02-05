@@ -67,10 +67,10 @@ time:
   title: Time
   url: time/
   datasets:
-    - name: Time
-      filetype: UDS_T_v1.0.zip
+    - name: v1
+      filetype: zip
       corpus: English Web TreeBank
-      url: UDS_T_v1.0.zip #time_eng_udewt_v1.tar.gz
+      url: UDS_T_v1.zip #time_eng_udewt_v1.tar.gz
       trainsize: 59593
       devsize: 16914
       testsize: 15411
