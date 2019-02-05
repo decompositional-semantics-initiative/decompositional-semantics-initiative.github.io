@@ -67,20 +67,14 @@ time:
   title: Time
   url: time/
   datasets:
-    - name: duration
-      filetype: coming soon #tar.gz
+    - name: Time
+      filetype: UDS_T_v1.0.zip
       corpus: English Web TreeBank
-      url: "" #time_eng_udewt_v1.tar.gz
-      trainsize: 119186
-      devsize: 33828
-      testsize: 30822
-    - name: temporal relation
-      filetype: coming soon #tar.gz
-      corpus: English Web TreeBank
-      url: "" #time_eng_udewt_v1.tar.gz
+      url: UDS_T_v1.0.zip #time_eng_udewt_v1.tar.gz
       trainsize: 59593
       devsize: 16914
       testsize: 15411
+    
 
 wsd:
   title: Word Sense
