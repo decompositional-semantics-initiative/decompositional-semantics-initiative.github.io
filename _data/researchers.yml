@@ -63,7 +63,7 @@ researchscientists:
       name: Matt Post
       role: Research Scientist
       affiliation: HLTCOE
-      website: https://mjpost.github.io/
+      website: https://cs.jhu.edu/~post/
       email: post@cs.jhu.edu
       projects:
         - parabank
