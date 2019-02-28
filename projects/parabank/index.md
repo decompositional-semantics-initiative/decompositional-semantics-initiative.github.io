@@ -10,4 +10,6 @@ For a detailed description of the collection and our methods, please see the fol
 
 > Hu, J. E., R. Rudinger, M. Post, & B. Van Durme. 2019. [ParaBank: Monolingual Bitext Generation and Sentential Paraphrasing via Lexically-constrained Neural Machine Translation](http://aaai.org/Papers/AAAI/2019/AAAI-HuJ.4052.pdf). Proceedings of AAAI 2019, Honolulu, Hawaii, January 26 – Feb 1, 2019.
 
-To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://parabank-demo.appspot.com).
+To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://www.cs.jhu.edu/~vandurme/pbr-1a-demo/). The rewriter can be downloaded [here](https://github.com/decompositional-semantics-initiative/ParaBank-rewriter). Please download [the model parameters here](http://cs.jhu.edu/~post/parabank19/AAAI_rewriter_params.gz) and place under the rewriter directory.
+
+Our evaluation data is available for download [here](https://github.com/decompositional-semantics-initiative/ParaBank-Eval-Data).
