@@ -127,6 +127,42 @@ graduatestudents:
       email: svashis3@ur.rochester.edu
       projects:
         - time
+    
+    hkhayrallah:
+      name: Huda Khayrallah
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: http://www.cs.jhu.edu/~huda/
+      email: huda@jhu.edu
+      projects:
+        - parabank
+    
+    rculkin:
+      name: Ryan Culkin
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: https://www.linkedin.com/in/rculkin/
+      email: rculkin@jhu.edu
+      projects:
+        - parabank
+    
+    pxia:
+      name: Patrick Xia
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: https://www.cs.jhu.edu/~paxia/
+      email: paxia@jhu.edu
+      projects:
+        - parabank
+    
+    tchen:
+      name: Tongfei Chen
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: http://www.cs.jhu.edu/~tongfei/
+      email: tongfei@jhu.edu
+      projects:
+        - parabank
 
 undergraduatestudents:
   name: Undergraduate Students
