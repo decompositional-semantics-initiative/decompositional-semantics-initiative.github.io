@@ -10,6 +10,15 @@ For a detailed description of the collection and our methods, please see the fol
 
 > Hu, J. E., R. Rudinger, M. Post, & B. Van Durme. 2019. [ParaBank: Monolingual Bitext Generation and Sentential Paraphrasing via Lexically-constrained Neural Machine Translation](http://aaai.org/Papers/AAAI/2019/AAAI-HuJ.4052.pdf). Proceedings of AAAI 2019, Honolulu, Hawaii, January 26 – Feb 1, 2019.
 
-To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://www.cs.jhu.edu/~vandurme/pbr-1a-demo/). The rewriter can be downloaded [here](https://github.com/decompositional-semantics-initiative/ParaBank-rewriter). Please download [the model parameters here](http://cs.jhu.edu/~post/parabank19/AAAI_rewriter_params.gz) and place under the rewriter directory.
-
 Our evaluation data is available for download [here](https://github.com/decompositional-semantics-initiative/ParaBank-Eval-Data).
+
+To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://www.cs.jhu.edu/~vandurme/pbr-1a-demo/). The rewriter can be downloaded [here](https://github.com/decompositional-semantics-initiative/ParaBank-rewriter/releases/tag/v0.1).
+
+
+We also present an improved constrained-decoding framework with an improved rewriter in the following paper:
+
+> Hu, J. E., H. Khayrallah, R. Culkin, P. Xia, T. Chen, M. Post, & B. Van Durme. 2019b. [Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting](TBD). Proceedings of NAACL 2019, Minneapolis, Minnesota, June 2 – 7, 2019.
+
+The improved rewriter is demonstrated [here](http://www.cs.jhu.edu/~vandurme/pbr-1b-demo/), and can be downloaded [here](https://github.com/decompositional-semantics-initiative/improved-ParaBank-rewriter/releases/tag/v0.1).
+
+We also made public our augmented [MNLI](http://cs.jhu.edu/~vandurme/data/pMNLI-1.0.tar.gz) and QA (coming soon) data, which is shown to have improved performance of some existing models.
