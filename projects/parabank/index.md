@@ -17,7 +17,7 @@ To interact with the monolingual rewriter described in the paper, [please check 
 
 We also present an improved constrained-decoding framework with an improved rewriter in the following paper:
 
-> Hu, J. E., H. Khayrallah, R. Culkin, P. Xia, T. Chen, M. Post, & B. Van Durme. 2019b. [Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting](TBD). Proceedings of NAACL 2019, Minneapolis, Minnesota, June 2 – 7, 2019.
+> Hu, J. E., H. Khayrallah, R. Culkin, P. Xia, T. Chen, M. Post, & B. Van Durme. 2019b. [Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting](http://cs.jhu.edu/~vandurme/papers/parabank-naacl19.pdf). Proceedings of NAACL 2019, Minneapolis, Minnesota, June 2 – 7, 2019.
 
 The improved rewriter is demonstrated [here](http://www.cs.jhu.edu/~vandurme/pbr-1b-demo/), and can be downloaded [here](https://github.com/decompositional-semantics-initiative/improved-ParaBank-rewriter/releases/tag/v0.1).
 
