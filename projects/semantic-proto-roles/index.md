@@ -20,6 +20,6 @@ For a detailed description of the datasets and the item construction and collect
 
 > Teichert, A., A. Poliak, B. Van Durme, & M. Gormley. 2017. [Semantic Proto-Role Labeling](https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14997/14053). Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17).
 
-> Rudinger, R., A. Teichert, R. Culkin, S. Zhang, & B. Van Durme. 2018. [Neural Davidsonian Semantic Proto-role Labeling](https://arxiv.org/pdf/1804.07976). To appear in Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, Brussels, Belgium, October 31-November 4, 2018.
+> Rudinger, R., A. Teichert, R. Culkin, S. Zhang, & B. Van Durme. 2018. [Neural-Davidsonian Semantic Proto-role Labeling](https://www.aclweb.org/anthology/D18-1114). Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, Brussels, Belgium, October 31-November 4, 2018.
 
 If you make use of this dataset in a presentation or publication, we ask that you please cite at least the first two papers.
