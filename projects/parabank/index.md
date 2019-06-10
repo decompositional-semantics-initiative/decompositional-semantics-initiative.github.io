@@ -19,6 +19,8 @@ We also present an improved constrained-decoding framework with an improved rewr
 
 > Hu, J. E., H. Khayrallah, R. Culkin, P. Xia, T. Chen, M. Post, & B. Van Durme. 2019b. [Improved Lexically Constrained Decoding for Translation and Monolingual Rewriting](http://cs.jhu.edu/~vandurme/papers/parabank-naacl19.pdf). Proceedings of NAACL 2019, Minneapolis, Minnesota, June 2 – 7, 2019.
 
+In our experiments on data augmentation we overlooked a nice related article on NMT-based paraphrasing for <i>adversarial</i> model improvements, please see: [Ribeiro, Singh and Guestrin, ACL'18](https://aclweb.org/anthology/P18-1079).  There the authors are explicitly looking to find paraphrases that break models.
+
 The improved rewriter is demonstrated [here](http://www.cs.jhu.edu/~vandurme/pbr-1b-demo/), and can be downloaded [here](https://github.com/decompositional-semantics-initiative/improved-ParaBank-rewriter/releases/tag/v0.1).
 
 We also made public our augmented [MNLI](http://cs.jhu.edu/~vandurme/data/pMNLI-1.0.tar.gz) and QA (coming soon) data, which is shown to have improved performance of some existing models.
