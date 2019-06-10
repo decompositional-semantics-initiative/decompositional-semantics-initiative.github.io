@@ -23,4 +23,4 @@ In our experiments on data augmentation we overlooked a nice related article on 
 
 The improved rewriter is demonstrated [here](http://www.cs.jhu.edu/~vandurme/pbr-1b-demo/), and can be downloaded [here](https://github.com/decompositional-semantics-initiative/improved-ParaBank-rewriter/releases/tag/v0.1).
 
-We also made public our augmented [MNLI](http://cs.jhu.edu/~vandurme/data/pMNLI-1.0.tar.gz) and QA (coming soon) data, which is shown to have improved performance of some existing models.
+We also made public our augmented [MNLI](http://cs.jhu.edu/~vandurme/data/pMNLI-1.0.tar.gz) and [QA](https://drive.google.com/open?id=1TjzjEvu9xj7aOVd47MMEzDRiL5t1ITn0) data, which is shown to have improved performance of some existing models.
