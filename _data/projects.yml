@@ -125,7 +125,7 @@ dnc:
       trainsize: 249,947
       devsize: 31,696
       testsize: 31,232
-    - name: DNC v0.1
+    - name: DNC v0.2
       filetype: url
       corpus: See paper
       url: https://github.com/decompositional-semantics-initiative/DNC/
