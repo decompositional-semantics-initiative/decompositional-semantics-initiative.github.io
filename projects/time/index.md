@@ -11,6 +11,6 @@ Using our framework, we construct the largest temporal relation dataset to date,
 
 For a detailed description of the protocols, datasets, as well as models of these data, please see the following paper:
 
-> Vashishtha, S., B. Van Durme, & A.S. White. 2019. [Fine-Grained Temporal Relation Extraction](https://www.aclweb.org/anthology/P19-1280/). 
+> Vashishtha, S., B. Van Durme, & A.S. White. 2019. [Fine-Grained Temporal Relation Extraction](https://www.aclweb.org/anthology/P19-1280/). Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019), Florence, Italy, July 29-31, 2019.
 
 The code for generating the dataset files for Amazon Mechanical Turk (along with the stylesheets) can be found [here](https://github.com/FACTSlab/factslab-protocols). The fully dockerized code with our best model can be found [here](https://hub.docker.com/r/sidvash/temporal).
