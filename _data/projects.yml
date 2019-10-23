@@ -1,5 +1,9 @@
 # Project navigation links
 
+decomptoolkit:
+  title: Decomp Toolkit
+  url: decomp-toolkit/
+  repository: https://github.com/decompositional-semantics-initiative/decomp
 
 predpatt:
   title: PredPatt

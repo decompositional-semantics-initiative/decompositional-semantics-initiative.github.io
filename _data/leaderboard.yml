@@ -1,0 +1,16 @@
+stengeleskinetal2019:
+  citation: Stengel-Eskin et al. 2019
+  url: https://arxiv.org/abs/1910.10138
+  models:
+  - name: Transductive Parser
+    semonly: 89.21
+    synsem: 79.37
+    synsemattr: 82.87
+    attronly: 49.12
+    sota: ["semonly", "synsemattr", "attronly"]
+  - name: Pipeline
+    semonly: 86.66
+    synsem: 79.53
+    synsemattr: "-"
+    attronly: 37.21
+    sota: ["synsem"]

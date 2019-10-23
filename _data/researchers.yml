@@ -10,6 +10,7 @@ faculty:
       website: http://www.cs.jhu.edu/~vandurme/
       email: vandurme@cs.jhu.edu
       projects:
+        - decomptoolkit
         - predpatt
         - spr
         - factuality
@@ -28,6 +29,7 @@ faculty:
       website: http://sites.krieger.jhu.edu/rawlins/
       email: kgr@jhu.edu
       projects:
+        - decomptoolkit
         - spr
         - factuality
 
@@ -39,6 +41,7 @@ faculty:
       email: aaron.white@rochester.edu
       twitter: aaronsteven
       projects:
+        - decomptoolkit
         - predpatt
         - spr
         - factuality
@@ -53,10 +56,11 @@ researchscientists:
     ksakaguchi:
       name: Keisuke Sakaguchi
       role: Research Scientist
-      affiliation: Allen Institute for Artificial Intelligence
+      affiliation: AI2
       website: http://cs.jhu.edu/~keisuke/
       email: keisukes@allenai.org
       projects:
+        - decomptoolkit
         - wsd
 
     mpost:
@@ -66,6 +70,23 @@ researchscientists:
       website: https://cs.jhu.edu/~post/
       email: post@cs.jhu.edu
       projects:
+        - decomptoolkit
+        - parabank
+
+    rrudinger:
+      name: Rachel Rudinger
+      role: Research Scientist
+      affiliation: AI2
+      website: https://rudinger.github.io
+      email: rudinger@jhu.edu
+      projects:
+        - decomptoolkit
+        - spr
+        - factuality
+        - commonsense
+        - predpatt
+        - dnc
+        - x-dsp
         - parabank
 
 # postdocs:
@@ -75,21 +96,6 @@ researchscientists:
 graduatestudents:
   name: Graduate Students
   people:
-    rrudinger:
-      name: Rachel Rudinger
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: https://rudinger.github.io
-      email: rudinger@jhu.edu
-      projects:
-        - spr
-        - factuality
-        - commonsense
-        - predpatt
-        - dnc
-        - x-dsp
-        - parabank
-
     szhang:
       name: Sheng Zhang
       role: Research Assistant
@@ -97,6 +103,7 @@ graduatestudents:
       website: http://www.cs.jhu.edu/~s.zhang/
       email: zsheng2@jhu.edu
       projects:
+        - decomptoolkit
         - predpatt
         - commonsense
         - x-dsp
@@ -117,6 +124,7 @@ graduatestudents:
       website: https://venkatasg.me
       email: vgovinda@ur.rochester.edu
       projects:
+        - decomptoolkit
         - genericity
 
     sidvash:
@@ -126,6 +134,7 @@ graduatestudents:
       website: https://sidsvash26.github.io/
       email: svashis3@ur.rochester.edu
       projects:
+        - decomptoolkit
         - time
     
     hkhayrallah:
