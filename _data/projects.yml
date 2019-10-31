@@ -174,3 +174,15 @@ parabank:
       trainsize: "-"
       devsize: "-"
       testsize: "-"
+
+parabank2:
+  title: ParaBank 2
+  url: parabank2/
+  datasets:
+    - name: ParaBank v2.0 Full (2.3 GB)
+      filetype: zip
+      corpus: See paper
+      url: http://cs.jhu.edu/~vandurme/data/parabank-2.0.zip
+      trainsize: "-"
+      devsize: "-"
+      testsize: "-"
