@@ -163,6 +163,22 @@ graduatestudents:
       email: tongfei@jhu.edu
       projects:
         - parabank
+    asingh:
+      name: Abhinav Singh
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: none
+      email: asingh78@jhu.edu
+      projects:
+        - parabank2 
+    nholzenberger:
+      name: Nils Holzenberger
+      role: Research Assistant
+      affiliation: Johns Hopkins University
+      website: http://www.cs.jhu.edu/~nholzen1/
+      email: nholzen1@jhu.edu
+      projects:
+        - parabank
 
 undergraduatestudents:
   name: Undergraduate Students
@@ -176,3 +192,4 @@ undergraduatestudents:
       projects:
         - dnc
         - parabank
+        - parabank2
