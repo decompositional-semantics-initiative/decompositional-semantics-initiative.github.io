@@ -20,6 +20,7 @@ faculty:
         - dnc
         - x-dsp
         - parabank
+        - parabank2
 
     krawlins:
       name: Kyle Rawlins
@@ -67,6 +68,7 @@ researchscientists:
       email: post@cs.jhu.edu
       projects:
         - parabank
+        - parabank2
 
 # postdocs:
 #   group: Postdocs
@@ -178,7 +180,7 @@ graduatestudents:
       website: http://www.cs.jhu.edu/~nholzen1/
       email: nholzen1@jhu.edu
       projects:
-        - parabank
+        - parabank2
 
 undergraduatestudents:
   name: Undergraduate Students
