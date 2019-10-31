@@ -21,6 +21,7 @@ faculty:
         - dnc
         - x-dsp
         - parabank
+        - parabank2
 
     krawlins:
       name: Kyle Rawlins
@@ -72,6 +73,7 @@ researchscientists:
       projects:
         - decomptoolkit
         - parabank
+        - parabank2
 
     rrudinger:
       name: Rachel Rudinger
@@ -187,7 +189,7 @@ graduatestudents:
       website: http://www.cs.jhu.edu/~nholzen1/
       email: nholzen1@jhu.edu
       projects:
-        - parabank
+        - parabank2
 
     esteng:
       name: Elias Stengel-Eskin
