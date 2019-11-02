@@ -12,8 +12,7 @@ For a detailed description of the collection and our methods, please see the fol
 
 Our evaluation data is available for download [here](https://github.com/decompositional-semantics-initiative/ParaBank-Eval-Data).
 
-#To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://www.cs.jhu.edu/~vandurme/pbr-1a-demo/). The rewriter can be downloaded [here](https://github.com/decompositional-semantics-initiative/ParaBank-rewriter/releases/tag/v0.1).
-
+<!--To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://www.cs.jhu.edu/~vandurme/pbr-1a-demo/). The rewriter can be downloaded [here](https://github.com/decompositional-semantics-initiative/ParaBank-rewriter/releases/tag/v0.1).-->
 
 We also present an improved constrained-decoding framework with an improved rewriter in the following paper:
 
