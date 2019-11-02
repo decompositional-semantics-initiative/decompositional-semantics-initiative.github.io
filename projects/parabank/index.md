@@ -12,7 +12,7 @@ For a detailed description of the collection and our methods, please see the fol
 
 Our evaluation data is available for download [here](https://github.com/decompositional-semantics-initiative/ParaBank-Eval-Data).
 
-To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://www.cs.jhu.edu/~vandurme/pbr-1a-demo/). The rewriter can be downloaded [here](https://github.com/decompositional-semantics-initiative/ParaBank-rewriter/releases/tag/v0.1).
+#To interact with the monolingual rewriter described in the paper, [please check out this live demo](http://www.cs.jhu.edu/~vandurme/pbr-1a-demo/). The rewriter can be downloaded [here](https://github.com/decompositional-semantics-initiative/ParaBank-rewriter/releases/tag/v0.1).
 
 
 We also present an improved constrained-decoding framework with an improved rewriter in the following paper:
@@ -21,6 +21,6 @@ We also present an improved constrained-decoding framework with an improved rewr
 
 In our experiments on data augmentation we overlooked a nice related article on NMT-based paraphrasing for <i>adversarial</i> model improvements, please see: [Ribeiro, Singh and Guestrin, ACL'18](https://aclweb.org/anthology/P18-1079).  There the authors are explicitly looking to find paraphrases that break models.
 
-The improved rewriter is demonstrated [here](http://www.cs.jhu.edu/~vandurme/pbr-1b-demo/), and can be downloaded [here](https://github.com/decompositional-semantics-initiative/improved-ParaBank-rewriter/releases/tag/v0.1).
+The improved rewriter is demonstrated [here](http://demo.parabank.io/), and can be downloaded [here](https://github.com/decompositional-semantics-initiative/improved-ParaBank-rewriter/releases/tag/v0.1).
 
 We also made public our augmented [MNLI](http://cs.jhu.edu/~vandurme/data/pMNLI-1.0.tar.gz) and [QA](https://drive.google.com/open?id=1TjzjEvu9xj7aOVd47MMEzDRiL5t1ITn0) data, which is shown to have improved performance of some existing models.
