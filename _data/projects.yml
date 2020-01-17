@@ -11,7 +11,7 @@ predpatt:
   repository: https://github.com/hltcoe/PredPatt
 
 spr:
-  title: Semantics Proto-Roles
+  title: Semantic Proto-Roles
   url: semantic-proto-roles/
   datasets:
     - name: v1
