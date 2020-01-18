@@ -27,7 +27,7 @@ faculty:
       name: Kyle Rawlins
       role: Associate Professor of Cognitive Science
       affiliation: Johns Hopkins University
-      website: http://sites.krieger.jhu.edu/rawlins/
+      website: https://rawlins.io/
       email: kgr@jhu.edu
       projects:
         - decomptoolkit
