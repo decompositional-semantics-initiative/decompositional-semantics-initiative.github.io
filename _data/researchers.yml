@@ -50,6 +50,7 @@ faculty:
         - time
         - wsd
         - dnc
+        - event-structure
 
 researchscientists:
   name: Research Scientists
@@ -138,6 +139,16 @@ graduatestudents:
       projects:
         - decomptoolkit
         - time
+
+    wgantt:
+      name: Will Gantt
+      role: Research Assistant
+      affiliation: University of Rochester
+      website: https://wgantt.github.io/
+      email: wgantt@ur.rochester.edu
+      projects:
+        - decomptoolkit
+        - event-structure
     
     hkhayrallah:
       name: Huda Khayrallah

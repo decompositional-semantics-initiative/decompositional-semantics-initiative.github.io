@@ -67,6 +67,18 @@ genericity:
       devsize: 3611
       testsize: 3500
 
+event-structure:
+  title: Event Structure
+  url: event-structure/
+  datasets:
+    - name: v1
+      filetype: tar.gz
+      corpus: English Web TreeBank
+      url: factuality_eng_udewt.tar.gz
+      trainsize: xxx
+      devsize: xxx
+      testsize: xxx
+
 time:
   title: Time
   url: time/
