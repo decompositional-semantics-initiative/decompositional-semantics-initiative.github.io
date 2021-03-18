@@ -1,226 +1,139 @@
-# Researchers
-
-faculty:
-  name: Faculty
-  people:
-    bvandurme:
-      name: Benjamin Van Durme
-      role: Assistant Professor of Computer Science
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~vandurme/
-      email: vandurme@cs.jhu.edu
-      projects:
-        - decomptoolkit
-        - predpatt
-        - spr
-        - factuality
-        - genericity
-        - time
-        - wsd
-        - commonsense
-        - dnc
-        - x-dsp
-        - parabank
-        - parabank2
-
-    krawlins:
-      name: Kyle Rawlins
-      role: Associate Professor of Cognitive Science
-      affiliation: Johns Hopkins University
-      website: https://rawlins.io/
-      email: kgr@jhu.edu
-      projects:
-        - decomptoolkit
-        - spr
-        - factuality
-
-    aswhite:
-      name: Aaron Steven White
-      role: Assistant Professor of Linguistics
-      affiliation: University of Rochester
-      website: http://aaronstevenwhite.io
-      email: aaron.white@rochester.edu
-      twitter: aaronsteven
-      projects:
-        - decomptoolkit
-        - predpatt
-        - spr
-        - factuality
-        - genericity
-        - time
-        - wsd
-        - dnc
-        - event-structure
-
-researchscientists:
-  name: Research Scientists
-  people:
-    ksakaguchi:
-      name: Keisuke Sakaguchi
-      role: Research Scientist
-      affiliation: AI2
-      website: http://cs.jhu.edu/~keisuke/
-      email: keisukes@allenai.org
-      projects:
-        - decomptoolkit
-        - wsd
-
-    mpost:
-      name: Matt Post
-      role: Research Scientist
-      affiliation: HLTCOE
-      website: https://cs.jhu.edu/~post/
-      email: post@cs.jhu.edu
-      projects:
-        - decomptoolkit
-        - parabank
-        - parabank2
-
-    rrudinger:
-      name: Rachel Rudinger
-      role: Research Scientist
-      affiliation: AI2
-      website: https://rudinger.github.io
-      email: rudinger@jhu.edu
-      projects:
-        - decomptoolkit
-        - spr
-        - factuality
-        - commonsense
-        - predpatt
-        - dnc
-        - x-dsp
-        - parabank
-
-# postdocs:
-#   group: Postdocs
-#   people:
-#
-graduatestudents:
-  name: Graduate Students
-  people:
-    szhang:
-      name: Sheng Zhang
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~s.zhang/
-      email: zsheng2@jhu.edu
-      projects:
-        - decomptoolkit
-        - predpatt
-        - commonsense
-        - x-dsp
-
-    azpoliak:
-      name: Adam Poliak
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~apoliak1/
-      email: azpoliak@cs.jhu.edu
-      projects:
-        - dnc
-
-    venkat:
-      name: Venkata Subrahmanyan G
-      role: Research Assistant
-      affiliation: University of Rochester
-      website: https://venkatasg.me
-      email: vgovinda@ur.rochester.edu
-      projects:
-        - decomptoolkit
-        - genericity
-
-    sidvash:
-      name: Siddharth Vashishtha
-      role: Research Assistant
-      affiliation: University of Rochester
-      website: https://sidsvash26.github.io/
-      email: svashis3@ur.rochester.edu
-      projects:
-        - decomptoolkit
-        - time
-
-    wgantt:
-      name: Will Gantt
-      role: Research Assistant
-      affiliation: University of Rochester
-      website: https://wgantt.github.io/
-      email: wgantt@ur.rochester.edu
-      projects:
-        - decomptoolkit
-        - event-structure
+esteng:
+  name: Elias Stengel-Eskin
+  affiliation: Johns Hopkins University
+  website: http://www.esteng.github.io
+  email: elias@jhu.edu
+  projects:
+    - decomptoolkit
+    - parsing
     
-    hkhayrallah:
-      name: Huda Khayrallah
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~huda/
-      email: huda@jhu.edu
-      projects:
-        - parabank
-    
-    rculkin:
-      name: Ryan Culkin
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: https://www.linkedin.com/in/rculkin/
-      email: rculkin@jhu.edu
-      projects:
-        - parabank
-    
-    pxia:
-      name: Patrick Xia
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: https://www.cs.jhu.edu/~paxia/
-      email: paxia@jhu.edu
-      projects:
-        - parabank
-    
-    tchen:
-      name: Tongfei Chen
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~tongfei/
-      email: tongfei@jhu.edu
-      projects:
-        - parabank
-    asingh:
-      name: Abhinav Singh
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: none
-      email: asingh78@jhu.edu
-      projects:
-        - parabank2 
-    nholzenberger:
-      name: Nils Holzenberger
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~nholzen1/
-      email: nholzen1@jhu.edu
-      projects:
-        - parabank2
+wgantt:
+  name: Will Gantt
+  affiliation: University of Rochester
+  website: https://wgantt.github.io/
+  email: wgantt@ur.rochester.edu
+  projects:
+    - decomptoolkit
+    - event-structure
 
-    esteng:
-      name: Elias Stengel-Eskin
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: http://www.esteng.github.io
-      email: elias@jhu.edu
-      projects:
-        - decomptoolkit
+sidvash:
+  name: Siddharth Vashishtha
+  affiliation: University of Rochester
+  website: https://sidsvash26.github.io/
+  email: svashis3@ur.rochester.edu
+  projects:
+    - time
+    
+venkat:
+  name: Venkata Subrahmanyan G
+  affiliation: University of Texas, Austin
+  website: https://venkatasg.me
+  email: vgovinda@ur.rochester.edu
+  projects:
+    - genericity
+    
+szhang:
+  name: Sheng Zhang
+  affiliation: Microsoft Research
+  website: http://www.cs.jhu.edu/~s.zhang/
+  email: zsheng2@jhu.edu
+  projects:
+    - predpatt
+    - parsing
 
-undergraduatestudents:
-  name: Undergraduate Students
-  people:
-    ehu:
-      name: Edward Hu
-      role: Research Assistant
-      affiliation: Johns Hopkins University
-      website: https://edwdh.github.io
-      email: edward.hu@jhu.edu
-      projects:
-        - dnc
-        - parabank
-        - parabank2
+azpoliak:
+  name: Adam Poliak
+  affiliation: Barnard College
+  website: http://www.cs.jhu.edu/~apoliak1/
+  email: azpoliak@cs.jhu.edu
+  projects:
+    - parsing
+
+ksakaguchi:
+  name: Keisuke Sakaguchi
+  affiliation: AI2
+  website: http://cs.jhu.edu/~keisuke/
+  email: keisukes@allenai.org
+  projects:
+    - wsd
+    
+rrudinger:
+  name: Rachel Rudinger
+  affiliation: University of Maryland
+  website: https://rudinger.github.io
+  email: rudinger@umd.edu
+  projects:
+    - spr
+    - factuality
+    - predpatt
+    - parsing
+
+lglass:
+  name: Lelia Glass
+  affiliation: Georgia Tech
+  website: https://www.leliaglass.com/
+  email: lelia.glass@modlangs.gatech.edu
+  projects:
+    - event-structure
+    
+aswhite:
+  name: Aaron Steven White
+  affiliation: University of Rochester
+  website: http://aaronstevenwhite.io
+  email: aaron.white@rochester.edu
+  twitter: aaronsteven
+  projects:
+    - decomptoolkit
+    - spr
+    - factuality
+    - genericity
+    - time
+    - event-structure
+    - parsing
+
+bvandurme:
+  name: Benjamin Van Durme
+  affiliation: Johns Hopkins University
+  website: http://www.cs.jhu.edu/~vandurme/
+  email: vandurme@cs.jhu.edu
+  projects:
+    - predpatt    
+    - spr
+    - factuality
+    - wsd
+    - genericity
+    - time
+    - parsing
+   
+krawlins:
+  name: Kyle Rawlins
+  affiliation: Johns Hopkins University
+  website: http://sites.krieger.jhu.edu/rawlins/
+  email: kgr@jhu.edu
+  projects:
+    - spr
+    - factuality
+
+fferraro:
+  name: Frank Ferraro
+  affiliation: Universiy of Maryland, Baltimore County
+  website: https://www.csee.umbc.edu/~ferraro/
+  email: ferraro@umbc.edu
+  projects:
+    - spr
+
+    
+charman:
+  name: Craig Harman
+  affiliation: Johns Hopkins University
+  website: https://craigharman.net/
+  email: craig@craigharman.net
+  projects:
+    - spr
+    
+# mpost:
+#   name: Matt Post
+#   affiliation: HLTCOE
+#   website: https://cs.jhu.edu/~post/
+#   email: post@cs.jhu.edu
+#   projects:

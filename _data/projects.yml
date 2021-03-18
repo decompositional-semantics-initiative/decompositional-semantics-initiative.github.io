@@ -34,7 +34,7 @@ parsing:
   title: Decompositional Semantic Parsing
   url: decompositional-semantic-parsing/
   references:
-  - citation: "Zhang, Sheng, Kevin Duh, & Benjamin Van Durme. 2018. Cross-lingual Semantic Parsing. <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 1664-1675. Brussels, Belgium: Association for Computational Linguistics."
+  - citation: "Zhang, Sheng, Xutai Ma, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme. 2018. Cross-lingual Semantic Parsing. <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 1664-1675. Brussels, Belgium: Association for Computational Linguistics."
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/D18-1194.pdf"
@@ -142,6 +142,15 @@ factuality:
       href: "https://doi.org/10.18653/v1/N18-1067"
     - label: "bib"
       href: "https://doi.org/10.18653/v1/N18-1067.bib"
+  - citation: "White, Aaron Steven, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2018. Lexicosyntactic Inference in Neural Models. In <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 4717–4724. Brussels, Belgium: Association for Computational Linguistics."
+    links:
+    - label: "pdf"
+      href: "https://www.aclweb.org/anthology/N18-1501.pdf"
+    - label: "data"
+      href: "http://megaattitude.io/projects/mega-veridicality/"      
+    - label: "doi"
+      href: "https://doi.org/10.18653/v1/D18-1501"
+
       
 genericity:
   title: Genericity
@@ -164,27 +173,31 @@ genericity:
       testsize: 3500
       citation: "Govindarajan et al. 2019"
   references:
-    - citation: "Govindarajan, Venkata, Benjamin Van Durme, and Aaron Steven White. 2019. Decomposing Generalization: Models of Generic, Habitual, and Episodic Statements. <i>Transactions of the Association for Computational Linguistics</i> 7: 501–517."
+  - citation: "Govindarajan, Venkata, Benjamin Van Durme, and Aaron Steven White. 2019. Decomposing Generalization: Models of Generic, Habitual, and Episodic Statements. <i>Transactions of the Association for Computational Linguistics</i> 7: 501–517."
     links:
-      - label: "pdf"
-        href: "https://www.aclweb.org/anthology/Q19-1035.pdf"
-      - label: "doi"
-        href: "https://www.aclweb.org/anthology/Q19-1035/"
-      - label: "bib"
-        href: "https://www.aclweb.org/anthology/Q19-1035.bib"
+    - label: "pdf"
+      href: "https://www.aclweb.org/anthology/Q19-1035.pdf"
+    - label: "doi"
+      href: "https://www.aclweb.org/anthology/Q19-1035/"
+    - label: "bib"
+      href: "https://www.aclweb.org/anthology/Q19-1035.bib"
 
 event-structure:
   title: Event Structure
   url: event-structure/
   datasets:
-    - name: v1
-      filetype: tar.gz
-      corpus: English Web TreeBank
-      url: factuality_eng_udewt.tar.gz
-      trainsize: xxx
-      devsize: xxx
-      testsize: xxx
+    # - name: v1
+    #   filetype: tar.gz
+    #   corpus: English Web TreeBank
+    #   url: factuality_eng_udewt.tar.gz
+    #   trainsize: xxx
+    #   devsize: xxx
+    #   testsize: xxx
+    #   citation: "Gantt et al. 2021"
+  references:
+  - citation: "Gantt, William, Lelia Glass, and Aaron Steven White. 2021. Decomposing and Recomposing Event Structure."
 
+      
 time:
   title: Time
   url: time/
