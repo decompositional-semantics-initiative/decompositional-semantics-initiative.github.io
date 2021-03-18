@@ -173,7 +173,18 @@ genericity:
       - label: "bib"
         href: "https://www.aclweb.org/anthology/Q19-1035.bib"
 
-      
+event-structure:
+  title: Event Structure
+  url: event-structure/
+  datasets:
+    - name: v1
+      filetype: tar.gz
+      corpus: English Web TreeBank
+      url: factuality_eng_udewt.tar.gz
+      trainsize: xxx
+      devsize: xxx
+      testsize: xxx
+
 time:
   title: Time
   url: time/
