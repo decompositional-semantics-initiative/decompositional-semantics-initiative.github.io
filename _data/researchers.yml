@@ -41,13 +41,13 @@ szhang:
     - predpatt
     - parsing
 
-azpoliak:
-  name: Adam Poliak
-  affiliation: Barnard College
-  website: http://www.cs.jhu.edu/~apoliak1/
-  email: azpoliak@cs.jhu.edu
-  projects:
-    - parsing
+# azpoliak:
+#   name: Adam Poliak
+#   affiliation: Barnard College
+#   website: http://www.cs.jhu.edu/~apoliak1/
+#   email: azpoliak@cs.jhu.edu
+#   projects:
+#     - parsing
 
 ksakaguchi:
   name: Keisuke Sakaguchi
