@@ -1,57 +1,83 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-{% include head.html %}
-</head>
-
-<body id="page">
-
-{% include navigation.html %}
+---
+layout: base
+---
 
 {% assign project = site.data.projects[page.handle] %}
 
-<div id="main" role="main">
-  <article class="entry">
-    {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">{{ project.title }}</h1>
-      </header>
-      <div class="entry-content">
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>{{ project.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+        {{ content }}
         {% if project.datasets %}
         <h2>Data</h2>
-        {% for dataset in project.datasets %}<a href="{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a>{% if forloop.last == false %},{% endif %} {% endfor %}
+	<center>
+	<table>
+	  <tr>
+	    <th align="left">Train</th>
+	    <th align="left">Dev</th>
+	    <th align="left">Test</th>
+	    <th style="text-align:center;">Download</th>
+	    <th style="text-align:center;">Citation</th>
+	  </tr>
+	  {% for dataset in project.datasets %}
+	  <tr>
+	    <td align="right">{{ dataset.trainsize }}</td>
+	    <td align="right">{{ dataset.devsize }}</td>
+	    <td align="right">{{ dataset.testsize }}</td>
+	    <td style="text-align:center;"><a href="{{ site.url }}/projects/{{ project.url }}{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a></td>
+	    <td style="text-align:center;">{{ dataset.citation }}</td>
+	  </tr>
+	  {% endfor %}
+	</table>
+	</center>
+        <!-- {% for dataset in project.datasets %}<a href="{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a>{% if forloop.last == false %},{% endif %} {% endfor %} -->
         {% endif %}
         {% if project.repository %}
         <h2>Code</h2>
         <a href="{{ project.repository }}">{{ project.repository }}</a>
         {% endif %}
-        <h2>About</h2>
-        {{ content }}
-        {% assign cols = 3 %}
-        {% assign colsminus1 = cols | minus: 1 %}
+	<h2>References</h2>
+	<div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; margin-top: 1em; margin-bottom: 2em; text-indent:-2em;">
+	{% for paper in project.references %}
+	  <div class="csl-entry" style="margin-bottom: 1em;">{{ paper.citation }}
+	    {% if paper.links %}[{% for link in paper.links %}<a href="{{ link.href }}" style="color: #2B599E;">{{ link.label }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}]{% endif %}
+	  </div>
+	  {% endfor %}
+	</div>
         <h2>Researchers</h2>
-        <table>
+	{% assign cols = 3 %}
+        {% assign colsminus1 = cols | minus: 1 %}
+        <table class="researcher-table">
         {% assign i = 0 %}
-        {% for group in site.data.researchers %}
-          {% for researcher in group[1].people %}
-            {% if researcher[1].projects contains page.handle %}
-            {% if i == 0 %}
+        {% for researcher in site.data.researchers %}
+        {% if researcher[1].projects contains page.handle %}
+        {% if i == 0 %}
             <tr>
+              {% endif %}
+              <td>
+		<center><a href="{{ researcher[1].website }}"><img src="{{ site.url }}/assets/img/{{ researcher[0] }}.jpg" class="researcher-img" alt="{{ researcher[1].name }} bio photo"/></a><br/><a class="researcher-link" href="{{ researcher[1].website }}"><b>{{ researcher[1].name }}</b></a></center>
+	      </td>
+              {% if i == colsminus1 %}
+            </tr>
+            {% assign i = 0 %}
+            {% else %}
+            {% assign i = i | plus: 1 %}
             {% endif %}
-              <td><center><a href="{{ site.url }}/researchers/{{ researcher[0] }}/"><img src="{{ site.url }}/images/{{ researcher[0] }}.jpg" class="bio-photo-about" alt="{{ researcher[1].name }} bio photo"/></a><br/><a href="{{ site.url }}/researchers/{{ researcher[0] }}/"><b>{{ researcher[1].name }}</b></td>
-                {% if i == colsminus1 %}
-                </tr>
-                {% assign i = 0 %}
-                {% else %}
-                {% assign i = i | plus: 1 %}
-                {% endif %}
             {% endif %}
           {% endfor %}
-        {% endfor %}
         {% if i > 0 and i < cols %}
           {% for j in (i..colsminus1) %}
           <td></td>
@@ -59,18 +85,7 @@
           </tr>
         {% endif %}
         </table>
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
-</div><!-- /#main -->
 
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
-    {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-{% include scripts.html %}
-
-</body>
-</html>
+    </div>
+  </div>
+</div>

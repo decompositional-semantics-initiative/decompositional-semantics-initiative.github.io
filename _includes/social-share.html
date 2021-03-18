@@ -1,10 +1,47 @@
-<span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags={{ page.tags | join: ',' | remove: ' ' }}&amp;text={{ page.title | escape | replace:' ','%20' }}&amp;url={{ site.url }}{{ page.url }}{% if author.twitter %}&amp;via={{ author.twitter }}{% endif %}" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
-</span>
-<span class="social-share-facebook">
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
-</span>
-<span class="social-share-googleplus">
-  <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
-</span>
-<!-- /.social-share -->
+<!-- Check if any share-links are active -->
+{% assign any-share-links = false %}
+{% for links in site.share-links-active %}
+  {% if links[1] == true %}
+    {% assign any-share-links = true %}
+  {% endif %}
+{% endfor %}
+
+{% if any-share-links %}
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  {% if site.share-links-active.twitter %}
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.facebook %}
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.linkedin %}
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.vk %}
+    <a href="https://vk.com/share.php?url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-vk" title="Share on VK">
+      <span class="fab fa-fw fa-vk" aria-hidden="true"></span>
+      <span class="sr-only">VK</span>
+    </a>
+  {% endif %}
+
+</section>
+
+{% endif %}

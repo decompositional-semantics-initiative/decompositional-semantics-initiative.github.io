@@ -13,34 +13,28 @@ the site: (meta)data about a researcher or (meta)data about a project.
 
 ### Adding a researcher
 
-There are three steps to adding a researcher to the
-[Researchers](http://decomp.io/researchers/) page.
+There two steps necessary to add a researcher such that they auto-populate on pages
+for projects they have contributed to:
 
 1. Create an entry for the researcher in the `_data/researchers.yml` file within
 the relevant group's `people` hash with a key built from the first letter of the
-researcher's first name plus their last name and a metadata hash with six
-entries: `name`, `role`, `affiliation`, `website`, `email`, and `projects`. For
-instance, Benjamin Van Durme falls within the `faculty` group, so we create an
-entry in the `people` hash for that group with a key `bvandurme`.
+researcher's first name plus their last name and a metadata hash with five
+entries: `name`, `affiliation`, `website`, `email`, and `projects`. For
+instance:
 
 ```
-faculty:
-  name: Faculty
-  people:
-    bvandurme:
-      name: Benjamin Van Durme
-      role: Assistant Professor of Computer Science
-      affiliation: Johns Hopkins University
-      website: http://www.cs.jhu.edu/~vandurme/
-      email: vandurme@cs.jhu.edu
-      projects:
-        - spr
-        - factuality
-        - genericity
-        - time
-        - wsd
-        - commonsense
-        - dnc
+bvandurme:
+  name: Benjamin Van Durme
+  affiliation: Johns Hopkins University
+  website: http://www.cs.jhu.edu/~vandurme/
+  email: vandurme@cs.jhu.edu
+  projects:
+  - predpatt
+  - spr
+  - factuality
+  - genericity
+  - time
+  - wsd
 ```
 
 Note that all entries are string-valued, except `projects`, which maps to a list
@@ -57,36 +51,6 @@ page](http://decomp.io/projects/semantic-proto-roles/).
 with a filename that matches that researcher's handle. For instance,
 `images/bvandurme.jpg` is the image associated with Benjamin Van Durme. Please
 make sure this `.jpg` uses the `.jpg` extension, not the `.jpeg` extension.
-
-3. Create a `.md` file in the `researchers/` directory with a name that matches
-the researcher's handle. This will be the researcher page. At the top of the
-file place the following metadata – where `<HANDLE>` is replaced with the
-researcher's handle from `_data/researchers.yml`.
-
-```
----
-layout: researcher
-group: faculty
-handle: <HANDLE>
-search_omit: true
----
-```
-
-For instance, the researcher page associated with Benjamin Van Durme would have
-the following metadata.
-
-```
----
-layout: researcher
-group: faculty
-handle: bvandurme
-search_omit: true
----
-```
-
-After the metadata, include a description of the researcher. The projects and
-website links will be automatically populated from the project metadata in
-`_data/researchers.yml`.
 
 ### Adding a project
 
@@ -170,5 +134,5 @@ The data/code links and researcher section will be automatically populated from
 the project metadata in `_data/projects.yml`.
 
 4. If the project is an annotation project, place any datasets associated with
-that project in the project directory – i.e. the same directory containing the
+that project in the project directory—i.e. the same directory containing the
 project page.
