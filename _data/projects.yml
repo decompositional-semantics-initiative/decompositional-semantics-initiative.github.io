@@ -216,6 +216,8 @@ event-structure:
     links:
     - label: "pdf"
       href: "https://arxiv.org/abs/2103.10387"
+    - label: "code"
+      href: "https://github.com/wgantt/event_type_induction"
 
       
 time:
