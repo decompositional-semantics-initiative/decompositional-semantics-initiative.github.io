@@ -16,5 +16,5 @@ to challenges in coping with changing label ontologies and new datasets. Further
 trained linguists and large annotation manuals.
 
 We develop joint UDS parsers, which
-learns to extract both graph structures and attributes
+learn to extract both graph structures and attributes
 from natural language input. 
