@@ -130,6 +130,14 @@ charman:
   email: craig@craigharman.net
   projects:
     - spr
+
+kmurray:
+  name: Kenton Murray
+  affiliation: Johns Hopkins University, HLTCOE
+  website: https://kentonmurray.com
+  email: kenton@jhu.edu
+  projects:
+    - parsing
     
 # mpost:
 #   name: Matt Post
