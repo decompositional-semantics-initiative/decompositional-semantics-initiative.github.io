@@ -218,7 +218,7 @@ event-structure:
       citation: "Gantt et al. 2021"
 
   references:
-    - citation: "Gantt, William, Lelia Glass, and Aaron Steven White. 2021. Decomposing and Recomposing Event Structure. <i>Transactions of the Association for Computational Linguistics</i> 10: 17-34"
+  - citation: "Gantt, William, Lelia Glass, and Aaron Steven White. 2021. Decomposing and Recomposing Event Structure. <i>Transactions of the Association for Computational Linguistics</i> 10: 17-34"
     links:
     - label: "pdf"
       href: "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00445/1984114/tacl_a_00445.pdf"
