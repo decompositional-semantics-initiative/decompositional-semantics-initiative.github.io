@@ -50,6 +50,12 @@ parsing:
       href: "https://www.aclweb.org/anthology/2020.acl-main.746/"
     - label: "bib"
       href: "https://www.aclweb.org/anthology/2020.acl-main.746.bib"
+  - citation: "Stengel-Eskin, Elias, Kenton Murray, Sheng Zhang, Aaron Steven White, and Benjamin Van Durme. 2021. Joint Universal Syntactic and Semantic Parsing. In <i>Transactions of the Association for Computational Linguistics</i>, 756–773." 
+    links:
+    - label: "pdf"
+      href: "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00396/1955190/tacl_a_00396.pdf" 
+    - label: "doi"
+      href: "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00396/106796/Joint-Universal-Syntactic-and-Semantic-Parsing" 
       
 spr:
   title: Semantic Proto-Roles
