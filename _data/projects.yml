@@ -100,7 +100,9 @@ spr:
   - citation: "Teichert, Adam, Adam Poliak, Benjamin Van Durme, and Matthew Gormley. 2017. Semantic Proto-Role Labeling. <i>Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17)</i>, 4459-4465."
     links:
     - label: "pdf"
-      href: "https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14997/14053"
+      href: "https://ojs.aaai.org/index.php/AAAI/article/view/11165/11024"
+    - label: "doi"
+      href: "https://doi.org/10.1609/aaai.v31i1.11165"
   - citation: "Rudinger, Rachel, Adam Teichert, Ryan Culkin, Sheng Zhang, and Benjamin Van Durme. 2018. Neural-Davidsonian Semantic Proto-role Labeling. <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 944–955. Brussels, Belgium: Association for Computational Linguistics."
     links:
     - label: "pdf"
