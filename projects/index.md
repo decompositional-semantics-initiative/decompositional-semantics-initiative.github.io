@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Research initiatives pushing the boundaries of semantic understanding
+subtitle: Research initiatives that are part of the Decompositional Semantics Initiative
 custom_js:
   - /assets/js/projects-filter.js
 ---
