@@ -8,6 +8,13 @@
 // Import Sass variables first (needed by other partials)
 @import "base/variables";
 
+// Import base styles (overrides for light theme)
+@import "base/base";
+
+// Import component styles
+@import "components/navbar";
+@import "components/cards";
+
 // Import page-specific styles that were extracted from inline
 @import "pages/home";
 @import "pages/projects";

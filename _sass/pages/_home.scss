@@ -27,7 +27,7 @@
 
 .project-header {
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(5, 174, 229, 0.1) 0%, rgba(79, 195, 247, 0.1) 100%);
     border-bottom: 1px solid $border;
     min-height: 100px; // Minimum height to accommodate 2-3 lines
     display: flex;
@@ -63,7 +63,7 @@
 .feature-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, $accent-primary, $accent-secondary);
+    background: linear-gradient(135deg, $gradient-start, $gradient-end);
     border-radius: 15px;
     display: flex;
     align-items: center;

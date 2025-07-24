@@ -45,7 +45,7 @@
         right: 0;
         width: 50%;
         height: 100%;
-        background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+        background: radial-gradient(circle at top right, rgba(5, 174, 229, 0.08) 0%, transparent 70%);
         pointer-events: none;
     }
     
@@ -57,8 +57,8 @@
         transition: $transition-default;
         
         &:hover {
-            color: $accent-secondary;
-            border-bottom-color: $accent-secondary;
+            color: darken($accent-primary, 10%);
+            border-bottom-color: darken($accent-primary, 10%);
         }
     }
 }
@@ -107,13 +107,13 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, $accent-primary, $accent-secondary);
+    background: linear-gradient(135deg, $gradient-start, $gradient-end);
     color: white;
     box-shadow: 0 4px 15px $shadow-primary;
     
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        box-shadow: 0 6px 20px $shadow-primary;
     }
 }
 
@@ -138,13 +138,13 @@
             font-weight: 700;
             
             &:hover {
-                color: $accent-secondary;
+                color: darken($accent-primary, 10%);
             }
         }
     }
     
     tbody tr:nth-child(even) {
-        background: rgba(99, 102, 241, 0.05);
+        background: rgba(5, 174, 229, 0.04);
     }
 }
 
@@ -163,7 +163,7 @@
     white-space: nowrap;
     
     &:hover {
-        background: $accent-secondary;
+        background: darken($accent-primary, 5%);
         color: white;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px $shadow-primary;

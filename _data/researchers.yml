@@ -1,81 +1,3 @@
-esteng:
-  name: Elias Stengel-Eskin
-  affiliation: Johns Hopkins University
-  website: http://www.esteng.github.io
-  email: elias@jhu.edu
-  projects:
-    - decomptoolkit
-    - parsing
-    
-wgantt:
-  name: Will Gantt
-  affiliation: University of Rochester
-  website: https://wgantt.github.io/
-  email: wgantt@ur.rochester.edu
-  projects:
-    - decomptoolkit
-    - event-structure
-
-sidvash:
-  name: Siddharth Vashishtha
-  affiliation: University of Rochester
-  website: https://sidsvash26.github.io/
-  email: svashis3@ur.rochester.edu
-  projects:
-    - time
-    
-venkat:
-  name: Venkata Subrahmanyan G
-  affiliation: University of Texas, Austin
-  website: https://venkatasg.me
-  email: vgovinda@ur.rochester.edu
-  projects:
-    - genericity
-    
-szhang:
-  name: Sheng Zhang
-  affiliation: Microsoft Research
-  website: http://www.cs.jhu.edu/~s.zhang/
-  email: zsheng2@jhu.edu
-  projects:
-    - predpatt
-    - parsing
-
-# azpoliak:
-#   name: Adam Poliak
-#   affiliation: Barnard College
-#   website: http://www.cs.jhu.edu/~apoliak1/
-#   email: azpoliak@cs.jhu.edu
-#   projects:
-#     - parsing
-
-ksakaguchi:
-  name: Keisuke Sakaguchi
-  affiliation: AI2
-  website: http://cs.jhu.edu/~keisuke/
-  email: keisukes@allenai.org
-  projects:
-    - wsd
-    
-rrudinger:
-  name: Rachel Rudinger
-  affiliation: University of Maryland
-  website: https://rudinger.github.io
-  email: rudinger@umd.edu
-  projects:
-    - spr
-    - factuality
-    - predpatt
-    - parsing
-
-lglass:
-  name: Lelia Glass
-  affiliation: Georgia Tech
-  website: https://www.leliaglass.com/
-  email: lelia.glass@modlangs.gatech.edu
-  projects:
-    - event-structure
-    
 aswhite:
   name: Aaron Steven White
   affiliation: University of Rochester
@@ -114,6 +36,76 @@ krawlins:
     - spr
     - factuality
 
+rrudinger:
+  name: Rachel Rudinger
+  affiliation: University of Maryland, College Park
+  website: https://rudinger.github.io
+  email: rudinger@umd.edu
+  projects:
+    - spr
+    - factuality
+    - predpatt
+    - parsing
+
+esteng:
+  name: Elias Stengel-Eskin
+  affiliation: University of Texas, Austin
+  website: https://esteng.github.io/
+  email: elias@jhu.edu
+  projects:
+    - decomptoolkit
+    - parsing
+    
+wgantt:
+  name: Will Walden
+  affiliation: Johns Hopkins University
+  website: https://wgantt.github.io/
+  email: wgantt.iv@gmail.com
+  projects:
+    - decomptoolkit
+    - event-structure
+
+sidvash:
+  name: Siddharth Vashishtha
+  affiliation: Google Deepmind
+  website: https://sidsvash26.github.io/
+  email: sidvash@google.com
+  projects:
+    - time
+    
+venkat:
+  name: Venkata Govindarajan
+  affiliation: Ithaca College
+  website: https://venkatasg.net/
+  email: gvenkata1994@gmail.com
+  projects:
+    - genericity
+    
+szhang:
+  name: Sheng Zhang
+  affiliation: Microsoft Research
+  website: https://sheng-z.github.io/
+  email: shezhan@microsoft.com
+  projects:
+    - predpatt
+    - parsing
+
+ksakaguchi:
+  name: Keisuke Sakaguchi
+  affiliation: Tohoku University
+  website: https://keisuke-sakaguchi.github.io/
+  email: keisuke.sakaguchi@tohoku.ac.jp
+  projects:
+    - wsd
+
+lglass:
+  name: Lelia Glass
+  affiliation: Georgia Tech
+  website: https://www.leliaglass.com/
+  email: lelia.glass@modlangs.gatech.edu
+  projects:
+    - event-structure
+
 fferraro:
   name: Frank Ferraro
   affiliation: Universiy of Maryland, Baltimore County
@@ -121,8 +113,7 @@ fferraro:
   email: ferraro@umbc.edu
   projects:
     - spr
-
-    
+ 
 charman:
   name: Craig Harman
   affiliation: Johns Hopkins University
@@ -133,7 +124,7 @@ charman:
 
 kmurray:
   name: Kenton Murray
-  affiliation: Johns Hopkins University, HLTCOE
+  affiliation: Johns Hopkins University
   website: https://kentonmurray.com
   email: kenton@jhu.edu
   projects:

@@ -1,0 +1,154 @@
+// Card styles for Material Design light theme
+.project-card,
+.researcher-card,
+.dataset-card,
+.project-showcase-card {
+    background: $bg-card;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+    transition: $transition-default;
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+}
+
+// Project showcase cards
+.project-showcase-card {
+    .project-icon {
+        background: linear-gradient(135deg, $gradient-start, $gradient-end);
+        box-shadow: 0 4px 12px $shadow-primary;
+    }
+    
+    h3 {
+        color: $text-primary;
+    }
+    
+    .project-description {
+        color: $text-secondary;
+    }
+    
+    .project-link {
+        color: $accent-primary;
+        font-weight: 600;
+        
+        &:hover {
+            color: darken($accent-primary, 15%);
+            
+            svg {
+                transform: translateX(4px);
+            }
+        }
+    }
+    
+    .meta-item {
+        color: $text-muted;
+        
+        svg {
+            color: $accent-primary;
+        }
+    }
+}
+
+// Researcher cards
+.researcher-card {
+    text-align: center;
+    padding: 2rem;
+    
+    .researcher-avatar {
+        border: 3px solid $accent-primary;
+        box-shadow: 0 4px 12px $shadow-primary;
+    }
+    
+    h3 {
+        color: $text-primary;
+        margin-top: 1rem;
+    }
+    
+    .researcher-projects {
+        color: $text-secondary;
+    }
+}
+
+// Dataset cards
+.dataset-card {
+    padding: 2rem;
+    
+    h3 {
+        color: $text-primary;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        
+        svg {
+            color: $accent-primary;
+        }
+    }
+    
+    .dataset-meta {
+        color: $text-secondary;
+        
+        .meta-badge {
+            background: $bg-secondary;
+            color: $text-secondary;
+            border: 1px solid $border;
+        }
+    }
+    
+    .download-btn {
+        background: $accent-secondary;
+        color: white;
+        
+        &:hover {
+            background: darken($accent-secondary, 10%);
+            box-shadow: 0 4px 12px $shadow-secondary;
+        }
+    }
+}
+
+// Home page project cards grid
+.projects-grid {
+    .project-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        .card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-footer {
+            margin-top: auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid $border;
+        }
+    }
+}
+
+// Stats cards
+.stat-card {
+    background: linear-gradient(135deg, $bg-card, $bg-secondary);
+    border: 1px solid $border;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    
+    .stat-number {
+        font-size: 3rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, $gradient-dark, $gradient-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .stat-label {
+        color: $text-secondary;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+    }
+}

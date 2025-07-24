@@ -1,0 +1,103 @@
+// Navbar styles for light theme with logo
+nav {
+    background: $navbar-bg;
+    border-bottom: 1px solid $navbar-border;
+    box-shadow: 0 2px 4px $navbar-shadow;
+    
+    &.scrolled {
+        background: darken($navbar-bg, 2%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    transition: $transition-default;
+    
+    &:hover {
+        transform: translateY(-1px);
+        
+        .logo-text {
+            color: $accent-primary;
+        }
+    }
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-primary;
+    transition: $transition-default;
+    background: none !important;
+    -webkit-text-fill-color: $text-primary !important;
+}
+
+// Update nav links for light theme
+.nav-links a {
+    color: $text-secondary;
+    font-weight: 500;
+    position: relative;
+    
+    &:hover {
+        color: $accent-primary;
+    }
+    
+    &::after {
+        background: $accent-primary;
+        height: 2px;
+    }
+}
+
+// Dropdown menu for light theme
+.dropdown-menu {
+    background: $bg-primary;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid $border;
+    
+    a {
+        color: $text-secondary;
+        
+        &:hover {
+            background: $bg-secondary;
+            color: $accent-primary;
+        }
+    }
+}
+
+// Mobile menu for light theme
+.mobile-menu {
+    background: $bg-primary;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    
+    a {
+        color: $text-secondary;
+        
+        &:hover {
+            color: $accent-primary;
+            background: $bg-secondary;
+        }
+    }
+}
+
+// Mobile toggle button
+.mobile-toggle {
+    span {
+        background: $text-secondary;
+    }
+    
+    &:hover span {
+        background: $accent-primary;
+    }
+    
+    &.active span {
+        background: $accent-primary;
+    }
+}

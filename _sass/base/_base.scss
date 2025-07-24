@@ -1,0 +1,239 @@
+// Base styles for light theme
+:root {
+    --bg-primary: #{$bg-primary};
+    --bg-secondary: #{$bg-secondary};
+    --bg-card: #{$bg-card};
+    --bg-card-hover: #{$bg-card-hover};
+    --text-primary: #{$text-primary};
+    --text-secondary: #{$text-secondary};
+    --text-muted: #{$text-muted};
+    --accent-primary: #{$accent-primary};
+    --accent-secondary: #{$accent-secondary};
+    --accent-glow: #{$accent-glow};
+    --success: #{$success};
+    --warning: #{$warning};
+    --error: #{$error};
+    --border: #{$border};
+    --shadow-primary: #{$shadow-primary};
+    --shadow-secondary: #{$shadow-secondary};
+}
+
+// Override body styles
+body {
+    background: $bg-primary;
+    color: $text-primary;
+}
+
+// Remove dark background animation for light theme
+.bg-animation {
+    display: none;
+}
+
+// Card styles for light theme
+.card,
+.project-card,
+.researcher-card,
+.project-showcase-card {
+    background: $bg-card;
+    border: 1px solid $border;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    
+    &:hover {
+        background: $bg-card-hover;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        border-color: $accent-primary;
+    }
+}
+
+// Button styles
+.btn {
+    &.btn-primary {
+        background: linear-gradient(135deg, $gradient-start, $gradient-end);
+        color: white;
+        border: none;
+        
+        &:hover {
+            background: linear-gradient(135deg, darken($gradient-start, 5%), darken($gradient-end, 5%));
+            box-shadow: 0 6px 20px $shadow-primary;
+            transform: translateY(-1px);
+        }
+    }
+    
+    &.btn-secondary {
+        background: transparent;
+        color: $accent-primary;
+        border: 2px solid $accent-primary;
+        
+        &:hover {
+            background: $accent-primary;
+            color: white;
+        }
+    }
+}
+
+// Links
+a {
+    color: $accent-primary;
+    
+    &:hover {
+        color: darken($accent-primary, 15%);
+    }
+}
+
+// Gradient text - using blue gradient for cleaner appearance
+.gradient-text {
+    background: linear-gradient(135deg, $gradient-dark 0%, $gradient-light 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+// Section backgrounds
+section:nth-of-type(even) {
+    background: $bg-secondary;
+}
+
+// Footer for better readability
+footer {
+    background: $footer-bg !important;
+    color: $footer-text !important;
+    
+    * {
+        color: inherit;
+    }
+    
+    h4 {
+        color: #ffffff !important;
+        font-weight: 600;
+    }
+    
+    .footer-section h4 {
+        color: #ffffff !important;
+    }
+    
+    p {
+        color: $footer-text;
+        opacity: 0.9;
+    }
+    
+    // Fix list items color
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            margin-bottom: 0.5rem;
+            color: $footer-text;
+        }
+    }
+    
+    a {
+        color: $footer-link !important;
+        text-decoration: none;
+        transition: $transition-default;
+        
+        &:hover {
+            color: $footer-link-hover !important;
+            text-decoration: underline;
+        }
+    }
+    
+    // Ensure Quick Links section has bright links
+    .footer-section {
+        a {
+            color: $footer-link !important;
+            font-weight: 500;
+            
+            &:hover {
+                color: $footer-link-hover !important;
+            }
+        }
+    }
+    
+    // Fix SVG icon colors
+    svg {
+        fill: $footer-text;
+        transition: $transition-default;
+    }
+    
+    // Social links specific styling
+    .social-links {
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-decoration: none;
+            
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+                text-decoration: none;
+                
+                svg {
+                    fill: #ffffff;
+                }
+            }
+            
+            svg {
+                fill: $footer-link;
+            }
+        }
+    }
+    
+    .footer-bottom {
+        background: transparent;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: 3rem;
+        padding-top: 2rem;
+        opacity: 0.8;
+        
+        p {
+            color: $footer-text;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// Code blocks for light theme
+pre, code {
+    background: $bg-secondary;
+    border: 1px solid $border;
+    color: $text-primary;
+}
+
+// Table styles for light theme
+table {
+    border-color: $border;
+    
+    th {
+        background: $bg-secondary;
+        color: $text-primary;
+        border-color: $border;
+    }
+    
+    td {
+        border-color: $border;
+    }
+    
+    tr:hover {
+        background: $bg-secondary;
+    }
+}
+
+// Form elements
+input, textarea, select {
+    background: $bg-primary;
+    border: 1px solid $border;
+    color: $text-primary;
+    
+    &:focus {
+        border-color: $accent-primary;
+        box-shadow: 0 0 0 3px $shadow-primary;
+    }
+}
