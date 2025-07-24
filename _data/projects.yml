@@ -5,6 +5,7 @@ decomptoolkit:
   description: "Python toolkit for querying Universal Decompositional Semantics graphs using SPARQL."
   references:
   - citation: "White, Aaron Steven, Elias Stengel-Eskin, Siddharth Vashishtha, Venkata Subrahmanyan Govindarajan, Dee Ann Reisinger, Tim Vieira, Keisuke Sakaguchi, Sheng Zhang, Francis Ferraro, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2020. The Universal Decompositional Semantics Dataset and Decomp Toolkit. In <i>Proceedings of The 12th Language Resources and Evaluation Conference</i>, 5698–5707. Marseille, France: European Language Resources Association."
+    year: 2020
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/2020.lrec-1.699.pdf"    
@@ -16,6 +17,7 @@ parsing:
   description: "Joint syntactic and semantic parsers that learn to extract graph structures and real-valued attributes from text."
   references:
   - citation: "Zhang, Sheng, Xutai Ma, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme. 2018. Cross-lingual Semantic Parsing. <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 1664-1675. Brussels, Belgium: Association for Computational Linguistics."
+    year: 2018
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/D18-1194.pdf"
@@ -24,6 +26,7 @@ parsing:
     - label: "bib"
       href: "https://www.aclweb.org/anthology/D18-1194.bib"
   - citation: "Stengel-Eskin, Elias, Aaron Steven White, Sheng Zhang, and Benjamin Van Durme. 2020. Universal Decompositional Semantic Parsing. In <i>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics</i>, 8427–8439. Online: Association for Computational Linguistics."
+    year: 2020
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/2020.acl-main.746.pdf"
@@ -31,7 +34,8 @@ parsing:
       href: "https://www.aclweb.org/anthology/2020.acl-main.746/"
     - label: "bib"
       href: "https://www.aclweb.org/anthology/2020.acl-main.746.bib"
-  - citation: "Stengel-Eskin, Elias, Kenton Murray, Sheng Zhang, Aaron Steven White, and Benjamin Van Durme. 2021. Joint Universal Syntactic and Semantic Parsing. In <i>Transactions of the Association for Computational Linguistics</i>, 756–773." 
+  - citation: "Stengel-Eskin, Elias, Kenton Murray, Sheng Zhang, Aaron Steven White, and Benjamin Van Durme. 2021. Joint Universal Syntactic and Semantic Parsing. In <i>Transactions of the Association for Computational Linguistics</i>, 756–773."
+    year: 2021
     links:
     - label: "pdf"
       href: "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00396/1955190/tacl_a_00396.pdf" 
@@ -45,6 +49,7 @@ predpatt:
   description: "Framework for extracting language-neutral predicate-argument patterns from Universal Dependencies."
   references:
   - citation: "White, Aaron Steven, Dee Ann Reisinger, Keisuke Sakaguchi, Tim Vieira, Sheng Zhang, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2016. Universal Decompositional Semantics on Universal Dependencies. In <i>Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</i>, 1713–1723. Austin, Texas: Association for Computational Linguistics."
+    year: 2016
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/D16-1177.pdf"
@@ -53,6 +58,7 @@ predpatt:
     - label: "bib"
       href: "https://www.aclweb.org/anthology/D16-1177.bib"
   - citation: "Zhang, Sheng, Rachel Rudinger, and Benjamin Van Durme, 2017. An evaluation of predpatt and open ie via stage 1 semantic role labeling. In <i>IWCS 2017—12th International Conference on Computational Semantics—Short papers</i>, 1-7."
+    year: 2017
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/W17-6900.pdf"
@@ -84,7 +90,16 @@ spr:
       citation: "White et al. 2016"
   references:
   - citation: "Reisinger, Dee Ann, Rachel Rudinger, Francis Ferraro, Craig Harman, Kyle Rawlins, and Benjamin Van Durme. 2015. Semantic Proto-roles. <i>Transactions of the Association of Computational Linguistics</i> 3: 475-488."
+    year: 2015
+    links:
+    - label: "pdf"
+      href: "https://www.aclweb.org/anthology/Q15-1034.pdf"
+    - label: "doi"
+      href: "https://doi.org/10.1162/tacl_a_00152"
+    - label: "bib"
+      href: "https://www.aclweb.org/anthology/Q15-1034.bib"
   - citation: "White, Aaron Steven, Dee Ann Reisinger, Keisuke Sakaguchi, Tim Vieira, Sheng Zhang, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2016. Universal Decompositional Semantics on Universal Dependencies. In <i>Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</i>, 1713–1723. Austin, Texas: Association for Computational Linguistics."
+    year: 2016
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/D16-1177.pdf"
@@ -93,6 +108,7 @@ spr:
     - label: "bib"
       href: "https://www.aclweb.org/anthology/D16-1177.bib"
   - citation: "White, Aaron Steven, Kyle Rawlins, and Benjamin Van Durme. 2017. The Semantic Proto-Role Linking Model. In <i>Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers</i>, 92–98. Valencia, Spain: Association for Computational Linguistics."
+    year: 2017
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/E17-2015.pdf"
@@ -103,12 +119,14 @@ spr:
     - label: "code"
       href: "https://github.com/aaronstevenwhite/SemanticProtoRoleLinkingModel"
   - citation: "Teichert, Adam, Adam Poliak, Benjamin Van Durme, and Matthew Gormley. 2017. Semantic Proto-Role Labeling. <i>Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17)</i>, 4459-4465."
+    year: 2017
     links:
     - label: "pdf"
       href: "https://ojs.aaai.org/index.php/AAAI/article/view/11165/11024"
     - label: "doi"
       href: "https://doi.org/10.1609/aaai.v31i1.11165"
   - citation: "Rudinger, Rachel, Adam Teichert, Ryan Culkin, Sheng Zhang, and Benjamin Van Durme. 2018. Neural-Davidsonian Semantic Proto-role Labeling. <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 944–955. Brussels, Belgium: Association for Computational Linguistics."
+    year: 2018
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/D18-1114.pdf"
@@ -141,6 +159,7 @@ factuality:
       citation: "Rudinger et al. 2018"
   references:
   - citation: "White, Aaron Steven, Dee Ann Reisinger, Keisuke Sakaguchi, Tim Vieira, Sheng Zhang, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2016. Universal Decompositional Semantics on Universal Dependencies. In <i>Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</i>, 1713–1723. Austin, Texas: Association for Computational Linguistics."
+    year: 2016
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/D16-1177.pdf"
@@ -149,6 +168,7 @@ factuality:
     - label: "bib"
       href: "https://www.aclweb.org/anthology/D16-1177.bib"
   - citation: "Rudinger, Rachel, Aaron Steven White, and Benjamin Van Durme. 2018. Neural Models of Factuality. In <i>Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)</i>, 731–744. New Orleans, Louisiana: Association for Computational Linguistics."
+    year: 2018
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/N18-1067.pdf"
@@ -157,6 +177,7 @@ factuality:
     - label: "bib"
       href: "https://doi.org/10.18653/v1/N18-1067.bib"
   - citation: "White, Aaron Steven, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2018. Lexicosyntactic Inference in Neural Models. In <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 4717–4724. Brussels, Belgium: Association for Computational Linguistics."
+    year: 2018
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/N18-1501.pdf"
@@ -189,6 +210,7 @@ genericity:
       citation: "Govindarajan et al. 2019"
   references:
   - citation: "Govindarajan, Venkata, Benjamin Van Durme, and Aaron Steven White. 2019. Decomposing Generalization: Models of Generic, Habitual, and Episodic Statements. <i>Transactions of the Association for Computational Linguistics</i> 7: 501–517."
+    year: 2019
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/Q19-1035.pdf"
@@ -228,10 +250,15 @@ event-structure:
       citation: "Gantt et al. 2021"
 
   references:
-  - citation: "Gantt, William, Lelia Glass, and Aaron Steven White. 2021. Decomposing and Recomposing Event Structure. <i>Transactions of the Association for Computational Linguistics</i> 10: 17-34"
+  - citation: "Gantt, William, Lelia Glass, and Aaron Steven White. 2022. Decomposing and Recomposing Event Structure. <i>Transactions of the Association for Computational Linguistics</i> 10: 17-34"
+    year: 2022
     links:
     - label: "pdf"
-      href: "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00445/1984114/tacl_a_00445.pdf"
+      href: "https://aclanthology.org/2022.tacl-1.2.pdf"
+    - label: "doi"
+      href: "https://doi.org/10.1162/tacl_a_00445"
+    - label: "bib"
+      href: "https://aclanthology.org/2022.tacl-1.2.bib"
     - label: "code"
       href: "https://github.com/wgantt/event_type_induction"
 
@@ -251,6 +278,7 @@ time:
       citation: "Vashishtha et al. 2019"
   references:
     - citation: "Vashishtha, Siddharth, Benjamin Van Durme, and Aaron Steven White. 2019. Fine-Grained Temporal Relation Extraction. In <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</i>, 2906–2919. Florence, Italy: Association for Computational Linguistics."
+      year: 2019
       links:
       - label: "pdf"
         href: "https://www.aclweb.org/anthology/P19-1280.pdf"
@@ -258,6 +286,17 @@ time:
         href: "https://www.aclweb.org/anthology/P19-1280"
       - label: "bib"
         href: "https://www.aclweb.org/anthology/P19-1280.bib"
+    - citation: "Vashishtha, Siddharth, Adam Poliak, Yash Kumar Lal, Benjamin Van Durme, and Aaron Steven White. 2020. Temporal Reasoning in Natural Language Inference. In <i>Findings of the Association for Computational Linguistics: EMNLP 2020</i>, 4070–4078. Online: Association for Computational Linguistics."
+      year: 2020
+      links:
+      - label: "pdf"
+        href: "https://aclanthology.org/2020.findings-emnlp.363.pdf"
+      - label: "doi"
+        href: "https://doi.org/10.18653/v1/2020.findings-emnlp.363"
+      - label: "bib"
+        href: "https://aclanthology.org/2020.findings-emnlp.363.bib"
+      - label: "code"
+        href: "https://github.com/sidsvash26/temporal_nli"
 
 wsd:
   title: Word Sense
@@ -274,6 +313,7 @@ wsd:
       citation: "White et al. 2016"
   references:
     - citation: "White, Aaron Steven, Dee Ann Reisinger, Keisuke Sakaguchi, Tim Vieira, Sheng Zhang, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2016. Universal Decompositional Semantics on Universal Dependencies. In <i>Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</i>, 1713–1723. Austin, Texas: Association for Computational Linguistics."
+      year: 2016
       links:
       - label: "pdf"
         href: "https://www.aclweb.org/anthology/D16-1177.pdf"

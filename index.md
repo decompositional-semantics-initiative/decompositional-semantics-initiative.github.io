@@ -31,7 +31,7 @@ title: Decompositional Semantics Initiative
 <section class="section" id="about">
     <div class="container">
         <div class="section-header">
-            <h2><span class="gradient-text">Revolutionizing Semantic Annotation</span></h2>
+            <h2><span class="gradient-text">Our Approach to Semantic Annotation</span></h2>
         </div>
         <div class="grid grid-2">
             <div class="fade-in">
@@ -136,45 +136,6 @@ title: Decompositional Semantics Initiative
         </div>
         <div style="text-align: center; margin-top: 3rem;">
             <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">View All Projects →</a>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="impact">
-    <div class="container">
-        <div class="section-header">
-            <h2><span class="gradient-text">Our Impact</span></h2>
-            <p>Numbers that showcase our contribution to the field</p>
-        </div>
-        <div class="grid grid-3">
-            <div class="card fade-in">
-                <h3 class="gradient-text">{{ site.data.projects | size }}</h3>
-                <p>Research projects</p>
-            </div>
-            <div class="card fade-in">
-                <h3 class="gradient-text">
-                    {% assign total_datasets = 0 %}
-                    {% for project in site.data.projects %}
-                        {% if project[1].datasets %}
-                            {% assign total_datasets = total_datasets | plus: project[1].datasets.size %}
-                        {% endif %}
-                    {% endfor %}
-                    {{ total_datasets }}
-                </h3>
-                <p>Datasets available</p>
-            </div>
-            <div class="card fade-in">
-                <h3 class="gradient-text">
-                    {% assign total_papers = 0 %}
-                    {% for project in site.data.projects %}
-                        {% if project[1].references %}
-                            {% assign total_papers = total_papers | plus: project[1].references.size %}
-                        {% endif %}
-                    {% endfor %}
-                    {{ total_papers }}
-                </h3>
-                <p>Research publications</p>
-            </div>
         </div>
     </div>
 </section>
