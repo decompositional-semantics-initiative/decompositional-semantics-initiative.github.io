@@ -1,0 +1,14 @@
+---
+# Required front matter for Jekyll to process this file
+---
+
+// Import existing hypermodern styles (temporarily during migration)
+@import url('hypermodern.css');
+
+// Import Sass variables first (needed by other partials)
+@import "base/variables";
+
+// Import page-specific styles that were extracted from inline
+@import "pages/home";
+@import "pages/projects";
+@import "pages/data";
