@@ -14,7 +14,7 @@ description: "Semantic annotation through simple, commonsensical questions."
 
 # --- Logo --- #
 # Avatar is used in navigation if needed
-avatar: "assets/img/decomp.png"
+avatar: "assets/img/decomp-icon.png"
 
 # --- Footer social media links --- #
 # Select the social network links that you want to show in the footer.
@@ -79,7 +79,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "page"
       comments: false
       social-share: true
   -

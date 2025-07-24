@@ -146,6 +146,11 @@
     tbody tr:nth-child(even) {
         background: rgba(5, 174, 229, 0.04);
     }
+    
+    // Right-align numeric columns (Train, Dev, Test)
+    .numeric-col {
+        text-align: right;
+    }
 }
 
 // Download Buttons

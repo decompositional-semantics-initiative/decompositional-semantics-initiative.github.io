@@ -58,9 +58,9 @@ subtitle: "Datasets from the Decompositional Semantics Initiative"
                 <th>Project</th>
                 <th>Dataset</th>
                 <th>Corpus</th>
-                <th>Train</th>
-                <th>Dev</th>
-                <th>Test</th>
+                <th class="numeric-col">Train</th>
+                <th class="numeric-col">Dev</th>
+                <th class="numeric-col">Test</th>
                 <th>Download</th>
             </tr>
         </thead>
@@ -77,9 +77,9 @@ subtitle: "Datasets from the Decompositional Semantics Initiative"
                     {% endif %}
                     <td>{{ dataset.name | default: "—" }}</td>
                     <td>{{ dataset.corpus | default: "—" }}</td>
-                    <td>{{ dataset.trainsize | default: "—" }}</td>
-                    <td>{{ dataset.devsize | default: "—" }}</td>
-                    <td>{{ dataset.testsize | default: "—" }}</td>
+                    <td class="numeric-col">{{ dataset.trainsize | default: "—" }}</td>
+                    <td class="numeric-col">{{ dataset.devsize | default: "—" }}</td>
+                    <td class="numeric-col">{{ dataset.testsize | default: "—" }}</td>
                     <td>
                         <a href="{{ '/projects/' | append: currproj.url | append: dataset.url | relative_url }}" 
                            class="download-btn"

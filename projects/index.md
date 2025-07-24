@@ -23,7 +23,7 @@ custom_js:
                 <span class="stat-label">Total Annotations</span>
             </div>
             <div class="stat">
-                <span class="stat-number gradient-text">18</span>
+                <span class="stat-number gradient-text">19</span>
                 <span class="stat-label">Publications</span>
             </div>
         </div>
@@ -113,7 +113,7 @@ custom_js:
                         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                         </svg>
-                        <span>{{ proj.datasets | size }} datasets</span>
+                        <span>{{ proj.datasets | size }} {% if proj.datasets.size == 1 %}dataset{% else %}datasets{% endif %}</span>
                     </div>
                     {% endif %}
                     {% if proj.references %}
@@ -121,7 +121,7 @@ custom_js:
                         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
                         </svg>
-                        <span>{{ proj.references | size }} papers</span>
+                        <span>{{ proj.references | size }} {% if proj.references.size == 1 %}paper{% else %}papers{% endif %}</span>
                     </div>
                     {% endif %}
                     {% if proj.repository %}
