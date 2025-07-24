@@ -2,7 +2,7 @@ decomptoolkit:
   title: Decomp Toolkit
   url: decomp-toolkit/
   repository: https://github.com/decompositional-semantics-initiative/decomp
-  description: "Toolkit for working with the Universal Decompositional Semantics (UDS) dataset."
+  description: "Python toolkit for querying Universal Decompositional Semantics graphs using SPARQL."
   references:
   - citation: "White, Aaron Steven, Elias Stengel-Eskin, Siddharth Vashishtha, Venkata Subrahmanyan Govindarajan, Dee Ann Reisinger, Tim Vieira, Keisuke Sakaguchi, Sheng Zhang, Francis Ferraro, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2020. The Universal Decompositional Semantics Dataset and Decomp Toolkit. In <i>Proceedings of The 12th Language Resources and Evaluation Conference</i>, 5698–5707. Marseille, France: European Language Resources Association."
     links:
@@ -13,7 +13,7 @@ parsing:
   title: Decompositional Parsing
   url: decompositional-parsing/
   repository: https://github.com/esteng/miso_uds
-  description: "Syntactic and semantic parsers that learn to extract both graph structures and attributes from natural language input."
+  description: "Joint syntactic and semantic parsers that learn to extract graph structures and real-valued attributes from text."
   references:
   - citation: "Zhang, Sheng, Xutai Ma, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme. 2018. Cross-lingual Semantic Parsing. <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 1664-1675. Brussels, Belgium: Association for Computational Linguistics."
     links:
@@ -42,6 +42,7 @@ predpatt:
   title: PredPatt
   url: predpatt/
   repository: https://github.com/hltcoe/PredPatt
+  description: "Framework for extracting language-neutral predicate-argument patterns from Universal Dependencies."
   references:
   - citation: "White, Aaron Steven, Dee Ann Reisinger, Keisuke Sakaguchi, Tim Vieira, Sheng Zhang, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2016. Universal Decompositional Semantics on Universal Dependencies. In <i>Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</i>, 1713–1723. Austin, Texas: Association for Computational Linguistics."
     links:
@@ -63,6 +64,7 @@ predpatt:
 spr:
   title: Semantic Proto-Roles
   url: semantic-proto-roles/
+  description: "Fine-grained thematic role properties that decompose traditional roles into continuous-valued semantic attributes."
   datasets:
     - name: v1
       filetype: tar.gz
@@ -119,6 +121,7 @@ spr:
 factuality:
   title: Factuality
   url: factuality/
+  description: "Annotation framework for event factuality incorporating speaker certainty and confidence levels."
   datasets:
     - name: v1
       filetype: tar.gz
@@ -166,6 +169,7 @@ factuality:
 genericity:
   title: Genericity
   url: genericity/
+  description: "Multi-dimensional annotation system decomposing generic, habitual, and episodic statements into referential properties."
   datasets:
     - name: pred
       filetype: zip
@@ -196,6 +200,7 @@ genericity:
 event-structure:
   title: Event Structure
   url: event-structure/
+  description: "Dataset capturing event durations, subevents, and temporal relations between predicates and arguments."
   datasets:
     - name: pred
       trainsize: 26701
@@ -234,6 +239,7 @@ event-structure:
 time:
   title: Time
   url: time/
+  description: "Real-valued temporal relation extraction for constructing document-level event timelines."
   datasets:
     - name: v1
       filetype: zip
@@ -256,6 +262,7 @@ time:
 wsd:
   title: Word Sense
   url: word-sense/
+  description: "Binary question-based approach to word sense disambiguation in context."
   datasets:
     - name: v1
       filetype: tar.gz

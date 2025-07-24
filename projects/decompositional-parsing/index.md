@@ -4,17 +4,10 @@ handle: parsing
 search_omit: true
 ---
 
-A structured account of compositional meaning has
-been longstanding goal for both natural language
-understanding and computational semantics. To
-this end, a number of efforts have focused on encoding semantic relationships and attributes in a
-semantic graph.
+Semantic parsing aims to map natural language to structured meaning representations. Traditional approaches rely on discrete categorical labels for semantic roles and relations, which can be brittle when faced with non-prototypical language use and difficult to port across domains or languages.
 
-In these formalisms, semantic information is typically encoded discretely, using nominal category
-labels for nodes and edges. This categorical encoding can make such formalisms brittle when presented with non-prototypical instances, and leads
-to challenges in coping with changing label ontologies and new datasets. Furthermore, they are difficult to annotate, often requiring
-trained linguists and large annotation manuals.
+Universal Decompositional Semantic parsing addresses these limitations by jointly learning to predict both semantic graph structures and their associated real-valued attributes. This approach decomposes complex semantic phenomena into scalar-valued dimensions that capture graded properties of predicates and their arguments.
 
-We develop joint UDS parsers, which
-learn to extract both graph structures and attributes
-from natural language input. 
+The parsing models employ neural architectures that perform joint syntactic and semantic analysis, learning compositional representations that can handle cross-lingual transfer and domain adaptation. These parsers are trained on the UDS corpus, which provides continuous-valued annotations for multiple semantic properties anchored to Universal Dependencies trees.
+
+Key technical contributions include multitask learning frameworks that jointly model syntax and semantics, graph-based neural architectures for structured prediction, and cross-lingual transfer learning techniques that leverage the language-neutral nature of the decompositional semantic representations. 

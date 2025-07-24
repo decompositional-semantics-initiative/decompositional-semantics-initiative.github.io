@@ -4,6 +4,10 @@ handle: spr
 search_omit: true
 ---
 
-A substantial amount of both computational and linguistic research on event representations has focused on categorical, coarse thematic roles such as *AGENT* and *PATIENT*.  In spite of this, there is evidence going back to Dowty 1991 that this is the wrong grain size to look for thematic information: the appearance of roles like *AGENT* represents a conglomeration of finer-grained thematic properties such as *causation*, *volition*, *change-of-state*, etc.  
+Traditional thematic role systems employ discrete categories like AGENT and PATIENT to characterize participant involvement in events. Following Dowty's (1991) proto-role theory, this project decomposes these coarse categories into fine-grained semantic properties that capture dimensions of meaning such as volition, sentience, causation, and change of state.
 
-In this line of work, we develop a semantic proto-role annotation task, and shown that it readily leads to quality annotations with minimal training in crowd-sourcing situations. Decomposing thematic roles into fine-grained proto-role properties provides both theoretical and practical gains: not only does it lead to a better account of the mapping of semantic representations to syntax, it also leads to more tractable semantic annotation tasks.
+The annotation framework operationalizes proto-role properties through simple binary questions about event participants. For example, rather than determining if an argument is an AGENT, annotators answer specific questions about whether the participant wanted the event to happen, was aware of the event, or caused the event. These responses are aggregated to produce scalar values representing the degree to which each property applies.
+
+The datasets include annotations for both Penn TreeBank and Universal Dependencies corpora, with properties annotated for all predicate-argument pairs identified by PredPatt. The continuous-valued nature of the annotations enables modeling graded semantic phenomena and soft clustering of semantic roles.
+
+Computational models trained on this data demonstrate that proto-role properties provide strong predictive signal for syntactic realization patterns, supporting theoretical claims about the syntax-semantics interface. The framework has been extended to model lexical semantic relationships and selectional preferences.

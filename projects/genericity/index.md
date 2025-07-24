@@ -4,6 +4,10 @@ handle: genericity
 search_omit: true
 ---
 
-An important line of study in formal semantics, philosophy, and AI investigates how language is used to represent knowledge of kinds, regularities and patterns. For instance, how do we know that *lions roar* describes a generalization about a kind of thing (lions), while *those lions roared* describes a specific event in which particular lions participated?
+Genericity encompasses the linguistic devices used to express generalizations about kinds, regularities, and patterns rather than specific events. The distinction between generic statements like "birds fly" and episodic statements like "the bird flew" reflects fundamental differences in how language encodes knowledge about the world.
 
-In this line of work, we propose a novel framework for capturing linguistic expressions of generalization. We suggest that linguistic expressions of generalization should be captured in a continuous multi-label system, rather than a multi-class system. We do this by decomposing categories such as EPISODIC, HABITUAL, and GENERIC into simple referential properties of predicates and their arguments.
+This project develops a decompositional approach to genericity that moves beyond traditional categorical distinctions between GENERIC, HABITUAL, and EPISODIC readings. Instead, the framework identifies underlying semantic dimensions including: whether predicates refer to particular events or kinds of events, whether arguments refer to particular entities or kinds, and the temporal properties of the predication.
+
+The annotation scheme employs questions about referential properties that can be reliably answered by naive annotators. For predicates, annotators assess whether the statement describes a specific event or a general pattern. For arguments, they determine whether the noun phrase refers to a specific entity or a category. Additional dimensions capture aspectual properties and frequency.
+
+The multi-dimensional annotations reveal that genericity phenomena form a continuum rather than discrete categories. Computational models trained on these annotations achieve strong performance on downstream tasks including knowledge base construction and temporal information extraction.
