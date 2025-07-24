@@ -11,7 +11,7 @@ decomptoolkit:
 
 parsing:
   title: Decompositional Parsing
-  url: decompositional-semantic-parsing/
+  url: decompositional-parsing/
   repository: https://github.com/esteng/miso_uds
   description: "Syntactic and semantic parsers that learn to extract both graph structures and attributes from natural language input."
   references:
