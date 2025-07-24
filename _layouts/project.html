@@ -54,28 +54,31 @@ layout: base
                     </ul>
                 </div>
                 {% endif %}
-
-                {% if project_data.references %}
-                <div class="project-info-card">
-                    <h3>Publications</h3>
-                    <ul class="references-list">
-                        {% for ref in project_data.references %}
-                        <li>
-                            <p class="citation">{{ ref.citation }}</p>
-                            {% if ref.links %}
-                            <div class="reference-links">
-                                {% for link in ref.links %}
-                                <a href="{{ link.href }}" target="_blank" class="reference-link">{{ link.label }}</a>
-                                {% endfor %}
-                            </div>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                {% endif %}
             </div>
         </div>
+
+        <!-- Publications Section - Full Width -->
+        {% if project_data.references %}
+        <div class="project-publications">
+            <div class="project-info-card">
+                <h3>Publications</h3>
+                <ul class="references-list">
+                    {% for ref in project_data.references %}
+                    <li>
+                        <p class="citation">{{ ref.citation }}</p>
+                        {% if ref.links %}
+                        <div class="reference-links">
+                            {% for link in ref.links %}
+                            <a href="{{ link.href }}" target="_blank" class="reference-link">{{ link.label }}</a>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
 
         <div class="back-to-projects">
             <a href="{{ '/projects/' | relative_url }}" class="btn btn-secondary">
@@ -208,6 +211,15 @@ layout: base
 
 .reference-link:hover {
     color: var(--accent-secondary);
+}
+
+.project-publications {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.project-publications .project-info-card {
+    width: 100%;
 }
 
 .back-to-projects {
