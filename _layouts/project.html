@@ -1,91 +1,459 @@
 ---
-layout: base
+layout: page
+title: Projects
+subtitle: Research initiatives pushing the boundaries of semantic understanding
 ---
 
-{% assign project = site.data.projects[page.handle] %}
-
-<div class="intro-header no-img">
-  <div class="container-md">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="page-heading">
-          <h1>{{ project.title }}</h1>
+<div class="projects-hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+        <p class="lead">
+            Our research projects represent a comprehensive approach to decompositional semantics, 
+            each tackling a fundamental aspect of meaning representation through innovative annotation frameworks.
+        </p>
+        <div class="project-stats">
+            <div class="stat">
+                <span class="stat-number gradient-text">{{ site.data.projects | size }}</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number gradient-text">
+                    {% assign total_datasets = 0 %}
+                    {% for project in site.data.projects %}
+                        {% if project[1].datasets %}
+                            {% assign total_datasets = total_datasets | plus: project[1].datasets.size %}
+                        {% endif %}
+                    {% endfor %}
+                    {{ total_datasets }}
+                </span>
+                <span class="stat-label">Datasets</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number gradient-text">
+                    {% assign total_papers = 0 %}
+                    {% for project in site.data.projects %}
+                        {% if project[1].references %}
+                            {% assign total_papers = total_papers | plus: project[1].references.size %}
+                        {% endif %}
+                    {% endfor %}
+                    {{ total_papers }}
+                </span>
+                <span class="stat-label">Publications</span>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
-
-<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
-  <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
-        {{ content }}
-        {% if project.datasets %}
-        <h2>Data</h2>
-	<center>
-	<table>
-	  <tr>
-	    <th align="left">Train</th>
-	    <th align="left">Dev</th>
-	    <th align="left">Test</th>
-	    <th style="text-align:center;">Download</th>
-	    <th style="text-align:center;">Citation</th>
-	  </tr>
-	  {% for dataset in project.datasets %}
-	  <tr>
-	    <td align="right">{{ dataset.trainsize }}</td>
-	    <td align="right">{{ dataset.devsize }}</td>
-	    <td align="right">{{ dataset.testsize }}</td>
-	    <td style="text-align:center;"><a href="{{ site.url }}/projects/{{ project.url }}{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a></td>
-	    <td style="text-align:center;">{{ dataset.citation }}</td>
-	  </tr>
-	  {% endfor %}
-	</table>
-	</center>
-        <!-- {% for dataset in project.datasets %}<a href="{{ dataset.url }}">{{ dataset.name }} ({{ dataset.filetype }})</a>{% if forloop.last == false %},{% endif %} {% endfor %} -->
-        {% endif %}
-        {% if project.repository %}
-        <h2>Code</h2>
-        <a href="{{ project.repository }}">{{ project.repository }}</a>
-        {% endif %}
-	<h2>References</h2>
-	<div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; margin-top: 1em; margin-bottom: 2em; text-indent:-2em;">
-	{% for paper in project.references %}
-	  <div class="csl-entry" style="margin-bottom: 1em;">{{ paper.citation }}
-	    {% if paper.links %}[{% for link in paper.links %}<a href="{{ link.href }}" style="color: #2B599E;">{{ link.label }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}]{% endif %}
-	  </div>
-	  {% endfor %}
-	</div>
-        <h2>Researchers</h2>
-	{% assign cols = 3 %}
-        {% assign colsminus1 = cols | minus: 1 %}
-        <table class="researcher-table">
-        {% assign i = 0 %}
-        {% for researcher in site.data.researchers %}
-        {% if researcher[1].projects contains page.handle %}
-        {% if i == 0 %}
-            <tr>
-              {% endif %}
-              <td>
-		<center><a href="{{ researcher[1].website }}"><img src="{{ site.url }}/assets/img/{{ researcher[0] }}.jpg" class="researcher-img" alt="{{ researcher[1].name }} bio photo"/></a><br/><a class="researcher-link" href="{{ researcher[1].website }}"><b>{{ researcher[1].name }}</b></a></center>
-	      </td>
-              {% if i == colsminus1 %}
-            </tr>
-            {% assign i = 0 %}
-            {% else %}
-            {% assign i = i | plus: 1 %}
-            {% endif %}
-            {% endif %}
-          {% endfor %}
-        {% if i > 0 and i < cols %}
-          {% for j in (i..colsminus1) %}
-          <td></td>
-          {% endfor %}
-          </tr>
-        {% endif %}
-        </table>
-
+<div class="projects-container">
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="annotation">Annotation</button>
+        <button class="filter-btn" data-filter="toolkit">Toolkits</button>
+        <button class="filter-btn" data-filter="parsing">Parsing</button>
     </div>
-  </div>
+
+    <div class="projects-showcase">
+        {% for project in site.data.projects %}
+        {% assign proj = project[1] %}
+        <div class="project-showcase-card" data-category="{% if proj.repository %}toolkit{% else %}annotation{% endif %}">
+            <div class="project-icon">
+                {% case project[0] %}
+                {% when 'spr' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                {% when 'factuality' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                {% when 'genericity' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                    </svg>
+                {% when 'time' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                    </svg>
+                {% when 'predpatt' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                {% when 'parsing' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M3 3h18v2H3zm0 16h18v2H3zm0-8h18v2H3zm0 4h18v2H3zm0-8h18v2H3z"/>
+                    </svg>
+                {% when 'wsd' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                {% when 'event-structure' %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                {% else %}
+                    <svg width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                {% endcase %}
+            </div>
+            <div class="project-content">
+                <h3>{{ proj.title }}</h3>
+                <p class="project-description">
+                    {% case project[0] %}
+                    {% when 'spr' %}
+                        Fine-grained thematic role properties that capture how events relate to their participants through decomposed semantic features.
+                    {% when 'factuality' %}
+                        Determining whether events described in text actually happened, incorporating speaker confidence and evidentiality.
+                    {% when 'genericity' %}
+                        Distinguishing generic statements about kinds from specific episodic events through multi-dimensional annotation.
+                    {% when 'time' %}
+                        Real-valued temporal relations and event durations for constructing precise document-level timelines.
+                    {% when 'predpatt' %}
+                        Universal predicate-argument extraction that bridges deep syntax and shallow semantics across languages.
+                    {% when 'parsing' %}
+                        Joint syntactic and semantic parsing models that learn to extract graph structures and attributes from text.
+                    {% when 'wsd' %}
+                        Word sense disambiguation through simple binary questions about meaning in context.
+                    {% when 'event-structure' %}
+                        Capturing complex event structures including subparts, participants, and their relationships over time.
+                    {% when 'decomptoolkit' %}
+                        Comprehensive Python toolkit for working with Universal Decompositional Semantics datasets and models.
+                    {% else %}
+                        Advanced semantic annotation project within the decompositional semantics framework.
+                    {% endcase %}
+                </p>
+                <div class="project-meta">
+                    {% if proj.datasets %}
+                    <div class="meta-item">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        <span>{{ proj.datasets | size }} datasets</span>
+                    </div>
+                    {% endif %}
+                    {% if proj.references %}
+                    <div class="meta-item">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                        <span>{{ proj.references | size }} papers</span>
+                    </div>
+                    {% endif %}
+                    {% if proj.repository %}
+                    <div class="meta-item">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <span>Open Source</span>
+                    </div>
+                    {% endif %}
+                </div>
+                <a href="{{ '/projects/' | append: proj.url | relative_url }}" class="project-link">
+                    Explore Project
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
+
+<style>
+/* Projects Hero Section */
+.projects-hero {
+    margin: -4rem -2rem 4rem;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    animation: pulse 20s ease-in-out infinite;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.project-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+/* Projects Showcase */
+.projects-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-showcase-card {
+    background: var(--bg-card);
+    border-radius: 24px;
+    padding: 3rem;
+    border: 1px solid var(--border);
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-showcase-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(99, 102, 241, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-showcase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+    border-color: var(--accent-primary);
+}
+
+.project-showcase-card:hover::before {
+    opacity: 1;
+}
+
+.project-icon {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.project-content {
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.project-content h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.meta-item svg {
+    opacity: 0.6;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    gap: 0.75rem;
+    color: var(--accent-secondary);
+}
+
+/* Hidden state for filtering */
+.project-showcase-card.hidden {
+    display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .projects-hero {
+        margin: -4rem -1rem 3rem;
+        padding: 5rem 1rem 3rem;
+    }
+    
+    .project-stats {
+        gap: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .project-showcase-card {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .project-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .project-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .project-description {
+        font-size: 1rem;
+    }
+    
+    .project-meta {
+        justify-content: center;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-showcase-card {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.project-showcase-card:nth-child(1) { animation-delay: 0.1s; }
+.project-showcase-card:nth-child(2) { animation-delay: 0.2s; }
+.project-showcase-card:nth-child(3) { animation-delay: 0.3s; }
+.project-showcase-card:nth-child(4) { animation-delay: 0.4s; }
+.project-showcase-card:nth-child(5) { animation-delay: 0.5s; }
+.project-showcase-card:nth-child(6) { animation-delay: 0.6s; }
+.project-showcase-card:nth-child(7) { animation-delay: 0.7s; }
+.project-showcase-card:nth-child(8) { animation-delay: 0.8s; }
+.project-showcase-card:nth-child(9) { animation-delay: 0.9s; }
+</style>
+
+<script>
+// Filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-showcase-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter projects
+            const filter = this.getAttribute('data-filter');
+            
+            projectCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.classList.remove('hidden');
+                    card.style.animation = 'fadeIn 0.6s ease forwards';
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+});
+</script>

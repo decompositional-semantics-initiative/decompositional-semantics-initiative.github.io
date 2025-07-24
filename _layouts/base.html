@@ -1,40 +1,124 @@
 ---
-common-css:
-  - "/assets/css/bootstrap-social.css"
-  - "/assets/css/beautifuljekyll.css"
-common-ext-css:
-  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-  - "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
-  - "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-common-ext-js:
-  - href: "https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    sri: "sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-  - href: "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    sri: "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    sri: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-common-js:
-  - "/assets/js/beautifuljekyll.js"
 ---
-
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
-<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
-{% include head.html %}
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/hypermodern.css' | relative_url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ '/assets/img/decomp-icon.png' | relative_url }}">
+    
+    {% if page.custom_css %}
+        {% for css in page.custom_css %}
+            <link rel="stylesheet" href="{{ css | relative_url }}">
+        {% endfor %}
+    {% endif %}
+</head>
 <body>
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
 
-  {% include gtm_body.html %}
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="{{ '/' | relative_url }}" class="logo">
+                <div class="logo-icon">D</div>
+                Decomp
+            </a>
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li class="dropdown">
+                    <a href="{{ '/projects/' | relative_url }}" class="dropdown-toggle">Projects</a>
+                    <ul class="dropdown-menu">
+                        {% for project in site.data.projects %}
+                        <li><a href="{{ '/projects/' | append: project[1].url | relative_url }}">{{ project[1].title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li><a href="{{ '/data/' | relative_url }}">Data</a></li>
+                <li><a href="{{ '/researchers/' | relative_url }}">Researchers</a></li>
+                <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  {% include nav.html %}
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li>
+                <a href="{{ '/projects/' | relative_url }}" class="has-submenu">Projects <span class="arrow">▼</span></a>
+                <ul class="submenu">
+                    {% for project in site.data.projects %}
+                    <li><a href="{{ '/projects/' | append: project[1].url | relative_url }}">{{ project[1].title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li><a href="{{ '/data/' | relative_url }}">Data</a></li>
+            <li><a href="{{ '/researchers/' | relative_url }}">Researchers</a></li>
+            <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+        </ul>
+    </div>
 
-  {{ content }}
+    <!-- Main Content -->
+    {{ content }}
 
-  {% include footer.html %}
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Decomp</h4>
+                    <p>The Decompositional Semantics Initiative is advancing natural language understanding through innovative annotation frameworks.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                        <li><a href="{{ '/data/' | relative_url }}">Datasets</a></li>
+                        <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+                        <li><a href="https://github.com/decompositional-semantics-initiative/decomp">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/decompositional-semantics-initiative" title="GitHub">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@decomp.io" title="Email">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ site.time | date: '%Y' }} Decompositional Semantics Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  {% include footer-scripts.html %}
-
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/hypermodern.js' | relative_url }}"></script>
+    {% if page.custom_js %}
+        {% for js in page.custom_js %}
+            <script src="{{ js | relative_url }}"></script>
+        {% endfor %}
+    {% endif %}
 </body>
 </html>

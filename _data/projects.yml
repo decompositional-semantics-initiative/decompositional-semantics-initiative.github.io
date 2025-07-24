@@ -2,37 +2,18 @@ decomptoolkit:
   title: Decomp Toolkit
   url: decomp-toolkit/
   repository: https://github.com/decompositional-semantics-initiative/decomp
+  description: "Toolkit for working with the Universal Decompositional Semantics (UDS) dataset."
   references:
   - citation: "White, Aaron Steven, Elias Stengel-Eskin, Siddharth Vashishtha, Venkata Subrahmanyan Govindarajan, Dee Ann Reisinger, Tim Vieira, Keisuke Sakaguchi, Sheng Zhang, Francis Ferraro, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2020. The Universal Decompositional Semantics Dataset and Decomp Toolkit. In <i>Proceedings of The 12th Language Resources and Evaluation Conference</i>, 5698–5707. Marseille, France: European Language Resources Association."
     links:
     - label: "pdf"
       href: "https://www.aclweb.org/anthology/2020.lrec-1.699.pdf"    
-  
-predpatt:
-  title: PredPatt
-  url: predpatt/
-  repository: https://github.com/hltcoe/PredPatt
-  references:
-  - citation: "White, Aaron Steven, Dee Ann Reisinger, Keisuke Sakaguchi, Tim Vieira, Sheng Zhang, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2016. Universal Decompositional Semantics on Universal Dependencies. In <i>Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</i>, 1713–1723. Austin, Texas: Association for Computational Linguistics."
-    links:
-    - label: "pdf"
-      href: "https://www.aclweb.org/anthology/D16-1177.pdf"
-    - label: "doi"
-      href: "https://doi.org/10.18653/v1/D16-1177"
-    - label: "bib"
-      href: "https://www.aclweb.org/anthology/D16-1177.bib"
-  - citation: "Zhang, Sheng, Rachel Rudinger, and Benjamin Van Durme, 2017. An evaluation of predpatt and open ie via stage 1 semantic role labeling. In <i>IWCS 2017—12th International Conference on Computational Semantics—Short papers</i>, 1-7."
-    links:
-    - label: "pdf"
-      href: "https://www.aclweb.org/anthology/W17-6900.pdf"
-    - label: "doi"
-      href: "https://www.aclweb.org/anthology/W17-6900/"
-    - label: "bib"
-      href: "https://www.aclweb.org/anthology/W17-6900.bib"
 
 parsing:
-  title: Decompositional Semantic Parsing
+  title: Decompositional Parsing
   url: decompositional-semantic-parsing/
+  repository: https://github.com/esteng/miso_uds
+  description: "Syntactic and semantic parsers that learn to extract both graph structures and attributes from natural language input."
   references:
   - citation: "Zhang, Sheng, Xutai Ma, Rachel Rudinger, Kevin Duh, and Benjamin Van Durme. 2018. Cross-lingual Semantic Parsing. <i>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</i>, 1664-1675. Brussels, Belgium: Association for Computational Linguistics."
     links:
@@ -56,6 +37,28 @@ parsing:
       href: "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00396/1955190/tacl_a_00396.pdf" 
     - label: "doi"
       href: "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00396/106796/Joint-Universal-Syntactic-and-Semantic-Parsing" 
+
+predpatt:
+  title: PredPatt
+  url: predpatt/
+  repository: https://github.com/hltcoe/PredPatt
+  references:
+  - citation: "White, Aaron Steven, Dee Ann Reisinger, Keisuke Sakaguchi, Tim Vieira, Sheng Zhang, Rachel Rudinger, Kyle Rawlins, and Benjamin Van Durme. 2016. Universal Decompositional Semantics on Universal Dependencies. In <i>Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</i>, 1713–1723. Austin, Texas: Association for Computational Linguistics."
+    links:
+    - label: "pdf"
+      href: "https://www.aclweb.org/anthology/D16-1177.pdf"
+    - label: "doi"
+      href: "https://doi.org/10.18653/v1/D16-1177"
+    - label: "bib"
+      href: "https://www.aclweb.org/anthology/D16-1177.bib"
+  - citation: "Zhang, Sheng, Rachel Rudinger, and Benjamin Van Durme, 2017. An evaluation of predpatt and open ie via stage 1 semantic role labeling. In <i>IWCS 2017—12th International Conference on Computational Semantics—Short papers</i>, 1-7."
+    links:
+    - label: "pdf"
+      href: "https://www.aclweb.org/anthology/W17-6900.pdf"
+    - label: "doi"
+      href: "https://www.aclweb.org/anthology/W17-6900/"
+    - label: "bib"
+      href: "https://www.aclweb.org/anthology/W17-6900.bib"
       
 spr:
   title: Semantic Proto-Roles
